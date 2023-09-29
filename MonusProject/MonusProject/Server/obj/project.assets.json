@@ -1266,24 +1266,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Aless\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\happy work\\MonusProject\\MonusProject\\Server\\MonusProject.Server.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Server\\MonusProject.Server.csproj",
       "projectName": "MonusProject.Server",
-      "projectPath": "C:\\happy work\\MonusProject\\MonusProject\\Server\\MonusProject.Server.csproj",
-      "packagesPath": "C:\\Users\\Aless\\.nuget\\packages\\",
-      "outputPath": "C:\\happy work\\MonusProject\\MonusProject\\Server\\obj\\",
+      "projectPath": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Server\\MonusProject.Server.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Server\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Aless\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1291,7 +1286,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -1299,11 +1293,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\happy work\\MonusProject\\MonusProject\\Client\\MonusProject.Client.csproj": {
-              "projectPath": "C:\\happy work\\MonusProject\\MonusProject\\Client\\MonusProject.Client.csproj"
+            "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\MonusProject.Client.csproj": {
+              "projectPath": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\MonusProject.Client.csproj"
             },
-            "C:\\happy work\\MonusProject\\MonusProject\\Shared\\MonusProject.Shared.csproj": {
-              "projectPath": "C:\\happy work\\MonusProject\\MonusProject\\Shared\\MonusProject.Shared.csproj"
+            "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Shared\\MonusProject.Shared.csproj": {
+              "projectPath": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Shared\\MonusProject.Shared.csproj"
             }
           }
         }
