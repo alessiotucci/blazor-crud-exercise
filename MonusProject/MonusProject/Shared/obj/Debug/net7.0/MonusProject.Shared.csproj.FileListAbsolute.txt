@@ -23,6 +23,7 @@ C:\Users\Aless\OneDrive\Desktop\daje\MonusProject\MonusProject\Shared\obj\Debug\
 C:\Users\Aless\OneDrive\Desktop\daje\MonusProject\MonusProject\Shared\obj\Debug\net7.0\MonusProject.Shared.pdb
 C:\Users\Aless\OneDrive\Desktop\daje\MonusProject\MonusProject\Shared\obj\Debug\net7.0\ref\MonusProject.Shared.dll
 C:\Users\User\Source\Repos\hr-management-system\MonusProject\MonusProject\Shared\bin\Debug\net7.0\MonusProject.Shared.deps.json
+C:\Users\User\Source\Repos\hr-management-system\MonusProject\MonusProject\Shared\bin\Debug\net7.0\MonusProject.Shared.runtimeconfig.json
 C:\Users\User\Source\Repos\hr-management-system\MonusProject\MonusProject\Shared\bin\Debug\net7.0\MonusProject.Shared.dll
 C:\Users\User\Source\Repos\hr-management-system\MonusProject\MonusProject\Shared\bin\Debug\net7.0\MonusProject.Shared.pdb
 C:\Users\User\Source\Repos\hr-management-system\MonusProject\MonusProject\Shared\obj\Debug\net7.0\MonusProject.Shared.csproj.AssemblyReference.cache
@@ -33,4 +34,5 @@ C:\Users\User\Source\Repos\hr-management-system\MonusProject\MonusProject\Shared
 C:\Users\User\Source\Repos\hr-management-system\MonusProject\MonusProject\Shared\obj\Debug\net7.0\MonusProject.Shared.dll
 C:\Users\User\Source\Repos\hr-management-system\MonusProject\MonusProject\Shared\obj\Debug\net7.0\refint\MonusProject.Shared.dll
 C:\Users\User\Source\Repos\hr-management-system\MonusProject\MonusProject\Shared\obj\Debug\net7.0\MonusProject.Shared.pdb
+C:\Users\User\Source\Repos\hr-management-system\MonusProject\MonusProject\Shared\obj\Debug\net7.0\MonusProject.Shared.genruntimeconfig.cache
 C:\Users\User\Source\Repos\hr-management-system\MonusProject\MonusProject\Shared\obj\Debug\net7.0\ref\MonusProject.Shared.dll

@@ -1,9 +1,12 @@
 using Microsoft.AspNetCore.ResponseCompression;
+using Microsoft.EntityFrameworkCore;
+using MonusProject.Server.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
+var ConnectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<ColloquioContext>(options => options.UseSqlServer(ConnectionString));
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 

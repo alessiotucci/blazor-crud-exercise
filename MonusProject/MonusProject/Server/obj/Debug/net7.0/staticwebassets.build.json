@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "huw99FiE2K+CqIta032BdnNWc+G18VARGRnqMLrJbT8=",
+  "Hash": "yh0r5MjYoZrGfaAEA4FNQloW4IX+hGKLM7751BQXe4I=",
   "Source": "MonusProject.Server",
   "BasePath": "_content/MonusProject.Server",
   "Mode": "Default",
@@ -11,10 +11,10 @@
       "Version": 2,
       "Source": "MonusProject.Client",
       "GetPublishAssetsTargets": "ComputeFilesToPublish;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "BuildProjectReferences=false;ResolveAssemblyReferencesFindRelatedSatellites=true;_PublishingBlazorWasmProject=true;Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishProperties": "BuildProjectReferences=false;ResolveAssemblyReferencesFindRelatedSatellites=true;_PublishingBlazorWasmProject=true",
       "AdditionalPublishPropertiesToRemove": "NoBuild;RuntimeIdentifier;WebPublishProfileFile;TargetFramework",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildProperties": "",
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     }
   ],
@@ -28,6 +28,40 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Azure.Core.dll",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Azure.Core.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\azure.core\\1.25.0\\lib\\net5.0\\Azure.Core.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Azure.Identity.dll",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Azure.Identity.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\azure.identity\\1.7.0\\lib\\netstandard2.0\\Azure.Identity.dll"
+    },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.boot.json",
       "SourceId": "MonusProject.Client",
@@ -60,7 +94,7 @@
       "AssetTraitValue": "boot",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\7.0.5\\build\\net7.0\\blazor.webassembly.js"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\7.0.11\\build\\net7.0\\blazor.webassembly.js"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\dotnet.7.0.5.mn2nd1o50q.js",
@@ -114,21 +148,21 @@
       "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.5\\runtimes\\browser-wasm\\native\\dotnet.wasm"
     },
     {
-      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\icudt.dat",
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Humanizer.dll",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
       "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "_framework/icudt.dat",
+      "RelativePath": "_framework/Humanizer.dll",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Primary",
       "RelatedAsset": "",
       "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "native",
+      "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.5\\runtimes\\browser-wasm\\native\\icudt.dat"
+      "CopyToPublishDirectory": "false",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\humanizer.core\\2.14.1\\lib\\net6.0\\Humanizer.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\icudt_CJK.dat",
@@ -182,6 +216,23 @@
       "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.5\\runtimes\\browser-wasm\\native\\icudt_no_CJK.dat"
     },
     {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\icudt.dat",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/icudt.dat",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "native",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.5\\runtimes\\browser-wasm\\native\\icudt.dat"
+    },
+    {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
@@ -196,7 +247,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.5\\lib\\net7.0\\Microsoft.AspNetCore.Authorization.dll"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.11\\lib\\net7.0\\Microsoft.AspNetCore.Authorization.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
@@ -213,7 +264,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.5\\lib\\net7.0\\Microsoft.AspNetCore.Components.dll"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.11\\lib\\net7.0\\Microsoft.AspNetCore.Components.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll",
@@ -230,7 +281,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\7.0.5\\lib\\net7.0\\Microsoft.AspNetCore.Components.Forms.dll"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\7.0.11\\lib\\net7.0\\Microsoft.AspNetCore.Components.Forms.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll",
@@ -247,7 +298,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.components.web\\7.0.5\\lib\\net7.0\\Microsoft.AspNetCore.Components.Web.dll"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.components.web\\7.0.11\\lib\\net7.0\\Microsoft.AspNetCore.Components.Web.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.dll",
@@ -264,7 +315,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\7.0.5\\lib\\net7.0\\Microsoft.AspNetCore.Components.WebAssembly.dll"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\7.0.11\\lib\\net7.0\\Microsoft.AspNetCore.Components.WebAssembly.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
@@ -281,7 +332,24 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.metadata\\7.0.5\\lib\\net7.0\\Microsoft.AspNetCore.Metadata.dll"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.metadata\\7.0.11\\lib\\net7.0\\Microsoft.AspNetCore.Metadata.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Bcl.AsyncInterfaces.dll",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Bcl.AsyncInterfaces.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\lib\\netstandard2.1\\Microsoft.Bcl.AsyncInterfaces.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.CSharp.dll",
@@ -299,6 +367,142 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.5\\runtimes\\browser-wasm\\lib\\net7.0\\Microsoft.CSharp.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Data.SqlClient.dll",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Data.SqlClient.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.1\\lib\\net6.0\\Microsoft.Data.SqlClient.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Abstractions.dll",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.Abstractions.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.11\\lib\\net6.0\\Microsoft.EntityFrameworkCore.Abstractions.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Design.dll",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.Design.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "false",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.11\\lib\\net6.0\\Microsoft.EntityFrameworkCore.Design.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.dll",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.11\\lib\\net6.0\\Microsoft.EntityFrameworkCore.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Relational.dll",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.Relational.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.11\\lib\\net6.0\\Microsoft.EntityFrameworkCore.Relational.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.SqlServer.dll",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.SqlServer.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.11\\lib\\net6.0\\Microsoft.EntityFrameworkCore.SqlServer.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Abstractions.dll",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Caching.Abstractions.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\lib\\net7.0\\Microsoft.Extensions.Caching.Abstractions.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Memory.dll",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Caching.Memory.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\lib\\net7.0\\Microsoft.Extensions.Caching.Memory.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.Abstractions.dll",
@@ -420,6 +624,23 @@
       "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\lib\\net7.0\\Microsoft.Extensions.DependencyInjection.dll"
     },
     {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyModel.dll",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.DependencyModel.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "false",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.dependencymodel\\7.0.0\\lib\\net7.0\\Microsoft.Extensions.DependencyModel.dll"
+    },
+    {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.FileProviders.Abstractions.dll",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
@@ -485,7 +706,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\lib\\net7.0\\Microsoft.Extensions.Logging.Abstractions.dll"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.1\\lib\\net7.0\\Microsoft.Extensions.Logging.Abstractions.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.dll",
@@ -539,6 +760,142 @@
       "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\lib\\net7.0\\Microsoft.Extensions.Primitives.dll"
     },
     {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Identity.Client.dll",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Identity.Client.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.identity.client\\4.47.2\\lib\\netcoreapp2.1\\Microsoft.Identity.Client.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Identity.Client.Extensions.Msal.dll",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Identity.Client.Extensions.Msal.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.identity.client.extensions.msal\\2.19.3\\lib\\netcoreapp2.1\\Microsoft.Identity.Client.Extensions.Msal.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.IdentityModel.Abstractions.dll",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.IdentityModel.Abstractions.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.24.0\\lib\\net6.0\\Microsoft.IdentityModel.Abstractions.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.IdentityModel.JsonWebTokens.dll",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.IdentityModel.JsonWebTokens.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.24.0\\lib\\net6.0\\Microsoft.IdentityModel.JsonWebTokens.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.IdentityModel.Logging.dll",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.IdentityModel.Logging.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.identitymodel.logging\\6.24.0\\lib\\net6.0\\Microsoft.IdentityModel.Logging.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.IdentityModel.Protocols.dll",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.IdentityModel.Protocols.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.24.0\\lib\\net6.0\\Microsoft.IdentityModel.Protocols.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.24.0\\lib\\net6.0\\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.IdentityModel.Tokens.dll",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.IdentityModel.Tokens.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.24.0\\lib\\net6.0\\Microsoft.IdentityModel.Tokens.dll"
+    },
+    {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
@@ -553,7 +910,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.jsinterop\\7.0.5\\lib\\net7.0\\Microsoft.JSInterop.dll"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.jsinterop\\7.0.11\\lib\\net7.0\\Microsoft.JSInterop.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.JSInterop.WebAssembly.dll",
@@ -570,7 +927,24 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.jsinterop.webassembly\\7.0.5\\lib\\net7.0\\Microsoft.JSInterop.WebAssembly.dll"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.jsinterop.webassembly\\7.0.11\\lib\\net7.0\\Microsoft.JSInterop.WebAssembly.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.SqlServer.Server.dll",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.SqlServer.Server.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\lib\\netstandard2.0\\Microsoft.SqlServer.Server.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.VisualBasic.Core.dll",
@@ -639,6 +1013,40 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.5\\runtimes\\browser-wasm\\lib\\net7.0\\Microsoft.Win32.Registry.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Win32.SystemEvents.dll",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Win32.SystemEvents.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\lib\\net6.0\\Microsoft.Win32.SystemEvents.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Mono.TextTemplating.dll",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Mono.TextTemplating.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "false",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\mono.texttemplating\\2.2.1\\lib\\netstandard2.0\\Mono.TextTemplating.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\MonusProject.Client.dll",
@@ -775,6 +1183,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.5\\runtimes\\browser-wasm\\lib\\net7.0\\System.Buffers.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.CodeDom.dll",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.CodeDom.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "false",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\system.codedom\\4.4.0\\lib\\netstandard2.0\\System.CodeDom.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Collections.Concurrent.dll",
@@ -962,6 +1387,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.5\\runtimes\\browser-wasm\\lib\\net7.0\\System.ComponentModel.TypeConverter.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Configuration.ConfigurationManager.dll",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.Configuration.ConfigurationManager.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.1\\lib\\net6.0\\System.Configuration.ConfigurationManager.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Configuration.dll",
@@ -1253,6 +1695,23 @@
       "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.5\\runtimes\\browser-wasm\\lib\\net7.0\\System.dll"
     },
     {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Drawing.Common.dll",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.Drawing.Common.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\system.drawing.common\\6.0.0\\lib\\net6.0\\System.Drawing.Common.dll"
+    },
+    {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Drawing.dll",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
@@ -1387,6 +1846,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.5\\runtimes\\browser-wasm\\lib\\net7.0\\System.Globalization.Extensions.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.IdentityModel.Tokens.Jwt.dll",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.IdentityModel.Tokens.Jwt.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.24.0\\lib\\net6.0\\System.IdentityModel.Tokens.Jwt.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.IO.Compression.Brotli.dll",
@@ -1727,6 +2203,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.5\\runtimes\\browser-wasm\\lib\\net7.0\\System.Linq.Queryable.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Memory.Data.dll",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.Memory.Data.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\system.memory.data\\1.0.2\\lib\\netstandard2.0\\System.Memory.Data.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Memory.dll",
@@ -2409,6 +2902,23 @@
       "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.5\\runtimes\\browser-wasm\\lib\\net7.0\\System.Resources.Writer.dll"
     },
     {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Runtime.Caching.dll",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.Runtime.Caching.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\system.runtime.caching\\6.0.0\\lib\\net6.0\\System.Runtime.Caching.dll"
+    },
+    {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Runtime.CompilerServices.Unsafe.dll",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
@@ -2834,6 +3344,23 @@
       "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.5\\runtimes\\browser-wasm\\lib\\net7.0\\System.Security.Cryptography.Primitives.dll"
     },
     {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Security.Cryptography.ProtectedData.dll",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.Security.Cryptography.ProtectedData.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\system.security.cryptography.protecteddata\\6.0.0\\lib\\net6.0\\System.Security.Cryptography.ProtectedData.dll"
+    },
+    {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Security.Cryptography.X509Certificates.dll",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
@@ -2866,6 +3393,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.5\\runtimes\\browser-wasm\\lib\\net7.0\\System.Security.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Security.Permissions.dll",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.Security.Permissions.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\system.security.permissions\\6.0.0\\lib\\net6.0\\System.Security.Permissions.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Security.Principal.dll",
@@ -3327,6 +3871,23 @@
       "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.5\\runtimes\\browser-wasm\\lib\\net7.0\\System.Windows.dll"
     },
     {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Windows.Extensions.dll",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.Windows.Extensions.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\system.windows.extensions\\6.0.0\\lib\\net6.0\\System.Windows.Extensions.dll"
+    },
+    {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Xml.dll",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
@@ -3531,6 +4092,23 @@
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.ComponentModel.Annotations.dll"
     },
     {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\+CyNN7m+.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.SqlServer.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.SqlServer.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.SqlServer.dll"
+    },
+    {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\+is3ZcsY.gz",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
@@ -3597,23 +4175,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.FileExtensions.dll"
-    },
-    {
-      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\0mkmhb6J.gz",
-      "SourceId": "MonusProject.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Forms.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\11iwYDFO.gz",
@@ -3769,6 +4330,23 @@
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Collections.dll"
     },
     {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\3Pfdg10y.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.IdentityModel.Tokens.Jwt.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.IdentityModel.Tokens.Jwt.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.IdentityModel.Tokens.Jwt.dll"
+    },
+    {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\3r8wB6FI.gz",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
@@ -3784,23 +4362,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Security.Cryptography.Cng.dll"
-    },
-    {
-      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\3U9k3O3M.gz",
-      "SourceId": "MonusProject.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Metadata.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\3zj0y4jA.gz",
@@ -3852,6 +4413,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Text.RegularExpressions.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\5OLZgmo+.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.CodeDom.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.CodeDom.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "false",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.CodeDom.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\5vXi9c+i.gz",
@@ -4007,23 +4585,6 @@
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.Binder.dll"
     },
     {
-      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\7vww6Ca1.gz",
-      "SourceId": "MonusProject.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.JSInterop.WebAssembly.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.JSInterop.WebAssembly.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.JSInterop.WebAssembly.dll"
-    },
-    {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\8A7p1h5O.gz",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
@@ -4109,6 +4670,23 @@
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Resources.Writer.dll"
     },
     {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\8W8JcOv+.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.Relational.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Relational.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Relational.dll"
+    },
+    {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\92I5ThGs.gz",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
@@ -4158,23 +4736,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Reflection.Emit.Lightweight.dll"
-    },
-    {
-      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\9ttk2ctw.gz",
-      "SourceId": "MonusProject.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/blazor.webassembly.js.gz",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\9Vr+FJLG.gz",
@@ -4279,21 +4840,21 @@
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Private.CoreLib.dll"
     },
     {
-      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\aV8x8Zn3.gz",
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\aw8lQrC8.gz",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
       "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Authorization.dll.gz",
+      "RelativePath": "_framework/Microsoft.Bcl.AsyncInterfaces.dll.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Bcl.AsyncInterfaces.dll",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll"
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Bcl.AsyncInterfaces.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\b+XxEiNE.gz",
@@ -4500,6 +5061,23 @@
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.Abstractions.dll"
     },
     {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\D6qyKLo0.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.IdentityModel.Logging.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.IdentityModel.Logging.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.IdentityModel.Logging.dll"
+    },
+    {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\dA7heY+o.gz",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
@@ -4532,6 +5110,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Runtime.Intrinsics.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\Dc+7EkJ0.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\Dd695gID.gz",
@@ -4619,6 +5214,23 @@
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Net.HttpListener.dll"
     },
     {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\EmEKBTmF.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.DependencyModel.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyModel.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "false",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyModel.dll"
+    },
+    {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\Epd2+KwP.gz",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
@@ -4636,6 +5248,23 @@
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Reflection.DispatchProxy.dll"
     },
     {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\eut5J+a7.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.SqlServer.Server.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.SqlServer.Server.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.SqlServer.Server.dll"
+    },
+    {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\f0P7Aaup.gz",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
@@ -4651,23 +5280,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Linq.dll"
-    },
-    {
-      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\f6ePQatO.gz",
-      "SourceId": "MonusProject.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.JSInterop.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\fhrjUowX.gz",
@@ -4704,6 +5316,40 @@
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Threading.Tasks.Extensions.dll"
     },
     {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\fJ6cueto.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.IdentityModel.Tokens.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.IdentityModel.Tokens.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.IdentityModel.Tokens.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\fLjixpJ4.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.Design.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Design.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "false",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Design.dll"
+    },
+    {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\fYXDMXeY.gz",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
@@ -4738,6 +5384,23 @@
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Transactions.dll"
     },
     {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\g2QORb2j.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Forms.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll"
+    },
+    {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\gceGnDuI.gz",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
@@ -4753,6 +5416,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Xml.Serialization.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\GxnMy4cW.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Logging.Abstractions.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\GyyRWAaV.gz",
@@ -4908,6 +5588,23 @@
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Text.Encoding.CodePages.dll"
     },
     {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\hVnfIJVW.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.Windows.Extensions.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Windows.Extensions.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Windows.Extensions.dll"
+    },
+    {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\i3XrXxa3.gz",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
@@ -4993,6 +5690,40 @@
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Resources.Reader.dll"
     },
     {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\IL6V0rj1.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.JSInterop.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\iMkZ3gml.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Identity.Client.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Identity.Client.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Identity.Client.dll"
+    },
+    {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\IMyDFO7f.gz",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
@@ -5025,6 +5756,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Net.Requests.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\IXxaavhO.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Authorization.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\izCsXURE.gz",
@@ -5146,6 +5894,40 @@
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.IO.FileSystem.dll"
     },
     {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\JrOGN1hs.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.Security.Permissions.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Security.Permissions.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Security.Permissions.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\JRweBiE6.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.Runtime.Caching.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Runtime.Caching.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Runtime.Caching.dll"
+    },
+    {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\jvO39044.gz",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
@@ -5248,6 +6030,23 @@
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\MonusProject.Client.pdb"
     },
     {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\kHcUB1Fi.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.Configuration.ConfigurationManager.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Configuration.ConfigurationManager.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Configuration.ConfigurationManager.dll"
+    },
+    {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\knNGq+0n.gz",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
@@ -5280,6 +6079,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Reflection.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\koOO4yNm.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Win32.SystemEvents.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Win32.SystemEvents.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Win32.SystemEvents.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\kycWsZdR.gz",
@@ -5350,6 +6166,23 @@
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Collections.Immutable.dll"
     },
     {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\l6Qwk9Hi.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.WebAssembly.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.dll"
+    },
+    {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\LbNnV17W.gz",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
@@ -5365,6 +6198,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Security.Cryptography.OpenSsl.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\lHWHf17y.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Humanizer.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Humanizer.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "false",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Humanizer.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\Lqc22cKn.gz",
@@ -5399,6 +6249,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Formats.Asn1.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\LzbEcjMV.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/blazor.webassembly.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\LzjhOqpT.gz",
@@ -5605,6 +6472,23 @@
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Security.dll"
     },
     {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\nPKFz3r3.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Mono.TextTemplating.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Mono.TextTemplating.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "false",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Mono.TextTemplating.dll"
+    },
+    {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\nvMFKN3r.gz",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
@@ -5620,6 +6504,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\dotnet.wasm"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\NvPcmpep.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.Memory.Data.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Memory.Data.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Memory.Data.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\nVy0pXSw.gz",
@@ -5656,6 +6557,23 @@
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Private.Uri.dll"
     },
     {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\oBJkyZKg.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Azure.Core.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Azure.Core.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Azure.Core.dll"
+    },
+    {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\OCdA2G0j.gz",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
@@ -5671,6 +6589,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Data.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\oqxp0Xji.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.JSInterop.WebAssembly.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.JSInterop.WebAssembly.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.JSInterop.WebAssembly.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\OSE4Pyfv.gz",
@@ -5741,21 +6676,21 @@
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Xml.dll"
     },
     {
-      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\pdu3SSBF.gz",
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\PBhGpnWF.gz",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
       "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.dll.gz",
+      "RelativePath": "_framework/Microsoft.Data.SqlClient.dll.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Data.SqlClient.dll",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll"
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Data.SqlClient.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\Ph88txXA.gz",
@@ -5773,6 +6708,40 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Net.Security.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\PHWD5lu+.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.Drawing.Common.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Drawing.Common.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Drawing.Common.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\PiZS7c8G.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Metadata.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\pJnXK6KV.gz",
@@ -5824,6 +6793,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.AppContext.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\Ppn4ETsu.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\PqMPDRtX.gz",
@@ -5911,23 +6897,6 @@
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Net.Primitives.dll"
     },
     {
-      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\qb8Pxoav.gz",
-      "SourceId": "MonusProject.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Web.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll"
-    },
-    {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\QDaq3utB.gz",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
@@ -5943,6 +6912,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Threading.Channels.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\QEDosVj4.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.IdentityModel.Abstractions.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.IdentityModel.Abstractions.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.IdentityModel.Abstractions.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\QKoDrlje.gz",
@@ -6132,6 +7118,40 @@
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Threading.ThreadPool.dll"
     },
     {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\S0g0D24F.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Identity.Client.Extensions.Msal.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Identity.Client.Extensions.Msal.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Identity.Client.Extensions.Msal.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\s9v+Uno3.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.Abstractions.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Abstractions.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Abstractions.dll"
+    },
+    {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\sFy6xygz.gz",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
@@ -6183,6 +7203,23 @@
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Runtime.CompilerServices.Unsafe.dll"
     },
     {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\sLE5hyPg.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.dll"
+    },
+    {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\SyG7skpB.gz",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
@@ -6200,6 +7237,23 @@
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Text.Encoding.dll"
     },
     {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\syw8iJSf.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.IdentityModel.Protocols.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.IdentityModel.Protocols.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.IdentityModel.Protocols.dll"
+    },
+    {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\szt75+n7.gz",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
@@ -6215,6 +7269,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Text.Encodings.Web.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\t5nJTMdn.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.Security.Cryptography.ProtectedData.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Security.Cryptography.ProtectedData.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Security.Cryptography.ProtectedData.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\tbUUwsRz.gz",
@@ -6266,23 +7337,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Reflection.Metadata.dll"
-    },
-    {
-      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\TiFgc72S.gz",
-      "SourceId": "MonusProject.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.Logging.Abstractions.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\tIYoj6st.gz",
@@ -6385,23 +7439,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.dll"
-    },
-    {
-      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\uRfUHdbI.gz",
-      "SourceId": "MonusProject.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.WebAssembly.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\uuXFjTlB.gz",
@@ -6557,6 +7594,23 @@
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Net.Quic.dll"
     },
     {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\W8EnSCtr.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Azure.Identity.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Azure.Identity.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Azure.Identity.dll"
+    },
+    {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\WCJ2EXqC.gz",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
@@ -6589,6 +7643,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Web.HttpUtility.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\WEz0Dwwj.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Web.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\wj9NescG.gz",
@@ -6795,6 +7866,23 @@
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.ValueTuple.dll"
     },
     {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\yIt50SLx.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Caching.Abstractions.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Abstractions.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Abstractions.dll"
+    },
+    {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\YiyO+EY8.gz",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
@@ -6844,6 +7932,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Net.NameResolution.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\yWewlhfX.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.IdentityModel.JsonWebTokens.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.IdentityModel.JsonWebTokens.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.IdentityModel.JsonWebTokens.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\yy2NjLCO.gz",
@@ -6914,6 +8019,23 @@
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.ComponentModel.TypeConverter.dll"
     },
     {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\zsqpu5DP.gz",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Caching.Memory.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Memory.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Memory.dll"
+    },
+    {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\build-gz\\Zsren1er.gz",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
@@ -6965,23 +8087,6 @@
       "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\scopedcss\\bundle\\MonusProject.Client.styles.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\service-worker\\service-worker.js",
-      "SourceId": "MonusProject.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\service-worker\\",
-      "BasePath": "/",
-      "RelativePath": "service-worker.js",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorServiceWorker",
-      "AssetTraitValue": "ServiceWorkerJs",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "wwwroot\\service-worker.js"
-    },
-    {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\service-worker-assets.js.build",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
@@ -6997,6 +8102,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net7.0\\service-worker-assets.js.build"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\service-worker\\service-worker.js",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\service-worker\\",
+      "BasePath": "/",
+      "RelativePath": "service-worker.js",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorServiceWorker",
+      "AssetTraitValue": "ServiceWorkerJs",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "wwwroot\\service-worker.js"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\wwwroot\\css\\app.css",
@@ -7048,6 +8170,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/open-iconic/FONT-LICENSE",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
@@ -7150,23 +8289,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
-    },
-    {
-      "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
-      "SourceId": "MonusProject.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "css/open-iconic/FONT-LICENSE",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
       "Identity": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
