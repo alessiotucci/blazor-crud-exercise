@@ -5,7 +5,7 @@
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=",
+      "hash": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7\/p4nS6D\/0=",
       "url": "css\/bootstrap\/bootstrap.min.css"
     },
     {
@@ -837,7 +837,7 @@
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-codB25EodaFEP43MDCfMBuKXU4LqurUKnQrpoMIFnPs=",
+      "hash": "sha256-UR9ADX3mCA+oxN6iV0HHO6c1YJavrq624KHeALLcwcI=",
       "url": "_framework\/dotnet.7.0.5.2rdkd92p7k.js"
     },
     {
@@ -889,5 +889,5 @@
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "6YBaVIHe"
+  "version": "JorPwJ28"
 };
