@@ -5097,11 +5097,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\MonusProject.Client.csproj",
+      "projectUniqueName": "C:\\Users\\User\\source\\repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\MonusProject.Client.csproj",
       "projectName": "MonusProject.Client",
-      "projectPath": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\MonusProject.Client.csproj",
+      "projectPath": "C:\\Users\\User\\source\\repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\MonusProject.Client.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\",
+      "outputPath": "C:\\Users\\User\\source\\repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5118,8 +5118,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Shared\\MonusProject.Shared.csproj": {
-              "projectPath": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Shared\\MonusProject.Shared.csproj"
+            "C:\\Users\\User\\source\\repos\\hr-management-system\\MonusProject\\MonusProject\\Shared\\MonusProject.Shared.csproj": {
+              "projectPath": "C:\\Users\\User\\source\\repos\\hr-management-system\\MonusProject\\MonusProject\\Shared\\MonusProject.Shared.csproj"
             }
           }
         }

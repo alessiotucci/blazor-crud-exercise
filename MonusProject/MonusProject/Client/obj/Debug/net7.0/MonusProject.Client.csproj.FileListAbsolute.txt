@@ -2626,10 +2626,6 @@ C:\Users\User\Source\Repos\hr-management-system\MonusProject\MonusProject\Client
 C:\Users\User\Source\Repos\hr-management-system\MonusProject\MonusProject\Client\obj\Debug\net7.0\build-gz\8A7p1h5O.gz
 C:\Users\User\Source\Repos\hr-management-system\MonusProject\MonusProject\Client\obj\Debug\net7.0\build-gz\985yNpaz.gz
 C:\Users\User\Source\Repos\hr-management-system\MonusProject\MonusProject\Client\obj\Debug\net7.0\build-gz\JvzJO0zj.gz
-C:\Users\User\Source\Repos\hr-management-system\MonusProject\MonusProject\Client\obj\Debug\net7.0\build-gz\icqK4IYW.gz
-C:\Users\User\Source\Repos\hr-management-system\MonusProject\MonusProject\Client\obj\Debug\net7.0\build-gz\yy2NjLCO.gz
-C:\Users\User\Source\Repos\hr-management-system\MonusProject\MonusProject\Client\obj\Debug\net7.0\build-gz\WZiSkMs+.gz
-C:\Users\User\Source\Repos\hr-management-system\MonusProject\MonusProject\Client\obj\Debug\net7.0\build-gz\kFYF4lfh.gz
 C:\Users\User\Source\Repos\hr-management-system\MonusProject\MonusProject\Client\obj\Debug\net7.0\build-gz\LzbEcjMV.gz
 C:\Users\User\Source\Repos\hr-management-system\MonusProject\MonusProject\Client\obj\Debug\net7.0\blazor.boot.json
 C:\Users\User\Source\Repos\hr-management-system\MonusProject\MonusProject\Client\obj\Debug\net7.0\staticwebassets\msbuild.MonusProject.Client.Microsoft.AspNetCore.StaticWebAssets.props
@@ -2650,3 +2646,7 @@ C:\Users\User\Source\Repos\hr-management-system\MonusProject\MonusProject\Client
 C:\Users\User\Source\Repos\hr-management-system\MonusProject\MonusProject\Client\obj\Debug\net7.0\refint\MonusProject.Client.dll
 C:\Users\User\Source\Repos\hr-management-system\MonusProject\MonusProject\Client\obj\Debug\net7.0\MonusProject.Client.pdb
 C:\Users\User\Source\Repos\hr-management-system\MonusProject\MonusProject\Client\obj\Debug\net7.0\ref\MonusProject.Client.dll
+C:\Users\User\source\repos\hr-management-system\MonusProject\MonusProject\Client\obj\Debug\net7.0\build-gz\ok5JZtsX.gz
+C:\Users\User\source\repos\hr-management-system\MonusProject\MonusProject\Client\obj\Debug\net7.0\build-gz\lzCU+EUI.gz
+C:\Users\User\source\repos\hr-management-system\MonusProject\MonusProject\Client\obj\Debug\net7.0\build-gz\plZ4fHsD.gz
+C:\Users\User\source\repos\hr-management-system\MonusProject\MonusProject\Client\obj\Debug\net7.0\build-gz\MVRbM17M.gz
