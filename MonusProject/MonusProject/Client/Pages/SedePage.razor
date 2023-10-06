@@ -1,0 +1,131 @@
+﻿@page "/Sede"
+@inject HttpClient Http
+
+@using MonusProject.Client.Shared.Models
+
+
+<h3>Sede</h3>
+@if (Sedi  == null)
+{
+    <p><em>Loading...</em></p>
+
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nome Sede </th>
+                <th>Indirizzo </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var cand in Sedi)
+            {
+                <tr>
+                    <td>@cand.SedeName</td>
+                    <td>@cand.Indirizzo</td>
+                    <button class="btn-danger" @onclick="() => Delete(cand.SedeId)">delete </button>
+                    <button class="btn-danger"> </button>
+
+                </tr>
+
+            }
+        </tbody>
+    </table>
+}
+
+<div class="card">
+    <form>
+        <input type="text" placeholder="Nome della Sede" @bind="valNomeSede" />
+        <br />
+        <input type="text" placeholder="Indirizzo della Sede" @bind="valSedeIndirizz" />
+        <br />
+
+        <button class="btn-primary" @onclick="Add">  submit </button>
+    </form>
+</div>
+
+<style>
+
+    .card {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 20px;
+        width: 300px;
+        margin: 0 auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        background-color: #f8f8f8;
+        text-align: center;
+    }
+
+        .card input[type="number"],
+        .card input[type="text"],
+        .card input[type="datetime"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            transition: border-color 0.3s ease-in-out;
+        }
+
+            .card input[type="number"]:focus,
+            .card input[type="text"]:focus,
+            .card input[type="datetime"]:focus {
+                border-color: #007bff;
+            }
+</style>
+
+
+@code {
+    public Sede[] Sedi;
+    public string valNomeSede;
+    public string valSedeIndirizz;
+
+
+    public Sede NuovaSede = new Sede();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        Sedi = await Http.GetFromJsonAsync<Sede[]>("api/Sede");
+    }
+
+
+    public async Task Add()
+    {
+        NuovaSede.SedeName = valNomeSede;
+        NuovaSede.Indirizzo = valSedeIndirizz;
+        AddSede(NuovaSede);
+    }
+
+
+    public async Task AddSede(Sede nuovasede)
+    {
+        var response = await Http.PostAsJsonAsync("api/Sede", nuovasede);
+
+    }
+
+    public async Task Delete(int id)
+    {
+
+        var response = await Http.DeleteAsync($"api/Sede/{id}");
+
+        if (response.IsSuccessStatusCode)
+        {
+            // History item was successfully deleted, update the list
+            Sedi = await Http.GetFromJsonAsync<Sede[]>("api/Sede");
+        }
+        else
+        {
+            Sedi = null;
+            // Handle the case where deletion was not successful
+            // You can show an error message or take appropriate action
+        }
+
+
+    }
+
+}

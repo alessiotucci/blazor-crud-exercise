@@ -1,0 +1,120 @@
+﻿@inject HttpClient Http
+
+@page "/Colloquio"
+@using MonusProject.Client.Shared.Models
+<h3>Colloquio</h3>
+
+
+@if (colloqui == null)
+{
+    <p><em>Loading...</em></p>
+    
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>orario del colloquio </th>      
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var cand in colloqui)
+            {
+                <tr>
+                    <td>@cand.RaiseTimeUTC</td>
+                    <button class="btn-danger" @onclick="() => Delete(cand.ColloquioId)">delete </button>
+                    <button class="btn-danger"> </button>
+
+                </tr>
+                
+            }
+        </tbody>
+    </table>
+}
+
+<div class="card">
+    <form>
+        <input type="time" placeholder="Orario del Colloquio" @bind="valueTime" />
+        <br />
+        <button class="btn-primary" @onclick="Add">  submit </button>
+    </form>
+</div>
+
+<style>
+
+    .card {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 20px;
+        width: 300px;
+        margin: 0 auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        background-color: #f8f8f8;
+        text-align: center;
+    }
+
+        .card input[type="number"],
+        .card input[type="text"],
+        .card input[type="datetime"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            transition: border-color 0.3s ease-in-out;
+        }
+
+            .card input[type="number"]:focus,
+            .card input[type="text"]:focus,
+            .card input[type="datetime"]:focus {
+                border-color: #007bff;
+            }
+</style>
+
+@code {
+    public Colloquio[]? colloqui;
+    public DateTime valueTime;
+    public string value1;
+
+    public string value2;
+    public Colloquio NuovoColloquio = new Colloquio();
+
+    protected override async Task OnInitializedAsync()
+    {
+        colloqui = await Http.GetFromJsonAsync<Colloquio[]>("api/Colloquio");
+    }
+    public async Task Add()
+    {
+        NuovoColloquio.RaiseTimeUTC = valueTime;
+        AddColloquio(NuovoColloquio);
+    }
+
+    public async Task AddColloquio(Colloquio nuovocolloquio)
+    {
+        var response = await Http.PostAsJsonAsync("api/Colloquio", nuovocolloquio);
+
+    }
+
+    public async Task Delete(int id)
+    {
+
+        var response = await Http.DeleteAsync($"api/Colloquio/{id}");
+
+        if (response.IsSuccessStatusCode)
+        {
+            // History item was successfully deleted, update the list
+            colloqui = await Http.GetFromJsonAsync<Colloquio[]>("api/Colloquio");
+        }
+        else
+        {
+            colloqui = null;
+            // Handle the case where deletion was not successful
+            // You can show an error message or take appropriate action
+        }
+
+
+    }
+
+}
