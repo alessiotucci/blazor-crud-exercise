@@ -50,3 +50,17 @@ C:\Users\Aless\Fanta\MonusProject\MonusProject\Shared\obj\Debug\net7.0\refint\Mo
 C:\Users\Aless\Fanta\MonusProject\MonusProject\Shared\obj\Debug\net7.0\MonusProject.Shared.pdb
 C:\Users\Aless\Fanta\MonusProject\MonusProject\Shared\obj\Debug\net7.0\MonusProject.Shared.genruntimeconfig.cache
 C:\Users\Aless\Fanta\MonusProject\MonusProject\Shared\obj\Debug\net7.0\ref\MonusProject.Shared.dll
+C:\Users\Aless\PushingP\MonusProject\MonusProject\Shared\bin\Debug\net7.0\MonusProject.Shared.deps.json
+C:\Users\Aless\PushingP\MonusProject\MonusProject\Shared\bin\Debug\net7.0\MonusProject.Shared.runtimeconfig.json
+C:\Users\Aless\PushingP\MonusProject\MonusProject\Shared\bin\Debug\net7.0\MonusProject.Shared.dll
+C:\Users\Aless\PushingP\MonusProject\MonusProject\Shared\bin\Debug\net7.0\MonusProject.Shared.pdb
+C:\Users\Aless\PushingP\MonusProject\MonusProject\Shared\obj\Debug\net7.0\MonusProject.Shared.csproj.AssemblyReference.cache
+C:\Users\Aless\PushingP\MonusProject\MonusProject\Shared\obj\Debug\net7.0\MonusProject.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aless\PushingP\MonusProject\MonusProject\Shared\obj\Debug\net7.0\MonusProject.Shared.AssemblyInfoInputs.cache
+C:\Users\Aless\PushingP\MonusProject\MonusProject\Shared\obj\Debug\net7.0\MonusProject.Shared.AssemblyInfo.cs
+C:\Users\Aless\PushingP\MonusProject\MonusProject\Shared\obj\Debug\net7.0\MonusProject.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Aless\PushingP\MonusProject\MonusProject\Shared\obj\Debug\net7.0\MonusProject.Shared.dll
+C:\Users\Aless\PushingP\MonusProject\MonusProject\Shared\obj\Debug\net7.0\refint\MonusProject.Shared.dll
+C:\Users\Aless\PushingP\MonusProject\MonusProject\Shared\obj\Debug\net7.0\MonusProject.Shared.pdb
+C:\Users\Aless\PushingP\MonusProject\MonusProject\Shared\obj\Debug\net7.0\MonusProject.Shared.genruntimeconfig.cache
+C:\Users\Aless\PushingP\MonusProject\MonusProject\Shared\obj\Debug\net7.0\ref\MonusProject.Shared.dll

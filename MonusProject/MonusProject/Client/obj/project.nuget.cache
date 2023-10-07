@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yJp9dOL0NkVoM32wgmXd9hSLhbojtL4zSUlWuOMC7MduE0JeK0F/QH8WMLw4YCkWtIdmYYQZzz5Vm21QgxaagQ==",
+  "dgSpecHash": "uvYByKS2RPn/p7iMab01pWj32Pdl3f0QNv/RmgJfTsS5jBHir305+Xi8P88Om+zTr9aqFjKvATwzkD8x7JcRdA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aless\\Fanta\\MonusProject\\MonusProject\\Client\\MonusProject.Client.csproj",
+  "projectFilePath": "C:\\Users\\Aless\\PushingP\\MonusProject\\MonusProject\\Client\\MonusProject.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aless\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Aless\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MonusProject.Server.Data;
 
@@ -11,9 +12,11 @@ using MonusProject.Server.Data;
 namespace MonusProject.Server.Migrations
 {
     [DbContext(typeof(ColloquioContext))]
-    partial class ColloquioContextModelSnapshot : ModelSnapshot
+    [Migration("20231007101127_change_colloquio_class")]
+    partial class change_colloquio_class
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

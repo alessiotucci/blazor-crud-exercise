@@ -27,6 +27,7 @@ namespace MonusProject.Server.Controllers
 
         // GET: api/Colloquio
         [HttpGet]
+
         public async Task<ActionResult<IEnumerable<Skill>>> GetSkill()
         {
             var skill = await _context.Skills.ToListAsync<Skill>();
@@ -35,6 +36,19 @@ namespace MonusProject.Server.Controllers
             else
                 return NotFound();
           
+        }
+        // GET: api/Skill/5
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Skill>> GetSkill(int id)
+        {
+            var skillFound = await _context.Skills.FindAsync(id);
+
+            if (skillFound == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(skillFound);
         }
         // DELETE: api/Skill/5
         [HttpDelete("{id}")]

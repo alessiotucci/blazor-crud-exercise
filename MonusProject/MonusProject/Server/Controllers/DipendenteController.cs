@@ -36,6 +36,19 @@ namespace MonusProject.Server.Controllers
             else
                 return NotFound();
         }
+        // GET: api/Dipendente/5
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Dipendente>> GetDipendente(int id)
+        {
+            var foundDipendente = await _context.Dipendenti.FindAsync(id);
+
+            if (foundDipendente == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(foundDipendente);
+        }
         // DELETE: api/Dipendenti/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteDipendente(int id)

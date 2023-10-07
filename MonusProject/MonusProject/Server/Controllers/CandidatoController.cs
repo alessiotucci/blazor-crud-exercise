@@ -34,18 +34,18 @@ namespace MonusProject.Server.Controllers
                 return NotFound();
         }
 
-        // GET: api/Candidato/5
+        // GET: api/Sede/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Candidato>> GetCandidato(int id)
+        public async Task<ActionResult<Candidato>> GetSede(int id)
         {
-            var candidato = await _context.Candidati.FindAsync(id);
+            var foundCandido = await _context.Candidati.FindAsync(id);
 
-            if (candidato == null)
+            if (foundCandido == null)
             {
                 return NotFound();
             }
 
-            return Ok(candidato);
+            return Ok(foundCandido);
         }
 
         // POST: api/Candidato

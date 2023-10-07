@@ -61,8 +61,12 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-edBC9RSFIio5WpLYlC8JBIH1DTq8dk7glZfACK8lOmU=",
+      "hash": "sha256-mM0xFUIZJ8udVN1k9V70zOy8QGjUla7Xjz88unZrlf8=",
       "url": "index.html"
+    },
+    {
+      "hash": "sha256-L6dTCWliOzaEZLXVlSTb2rT9\/hY+u3TS1NFSKT48oEE=",
+      "url": "js\/Popup.js"
     },
     {
       "hash": "sha256-9lhFZty4KMdFfu+NZiSDlAZqWKyLOLdkiDI89V+vTd8=",
@@ -997,19 +1001,19 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-WfblMRGXaeCFItOHwc8NjvlloeG\/ND6A7Ed\/x+bSECM=",
+      "hash": "sha256-b0luzpODN8juIGjp2ENME+WqBEqgvHD5HT2o2hKuy6c=",
       "url": "_framework\/MonusProject.Shared.dll"
     },
     {
-      "hash": "sha256-KhBuohhO4udKixpzcK1DMqi6DGzJNi1ufxSb6LBCjdY=",
+      "hash": "sha256-H0ob36gaMsjV9ujq2AzQs5TDXfdWxxEr8Ud7kIHJe4o=",
       "url": "_framework\/MonusProject.Shared.pdb"
     },
     {
-      "hash": "sha256-2WwidTRJgEeBpZrPwA9dNSduSgSLIHtStO1KJSbKTDk=",
+      "hash": "sha256-WpUl6JM2Xfai3YO0UGbwqA+seaqdiytN0vYpp1hZdgU=",
       "url": "_framework\/MonusProject.Client.dll"
     },
     {
-      "hash": "sha256-XTTYr9TMba9P4itTq\/9DaeEkk4lFQBjze+pQe3eP7qI=",
+      "hash": "sha256-ehcn5wUPHV+CyND99QAonEJLeovmceyPrxQds45GyGI=",
       "url": "_framework\/MonusProject.Client.pdb"
     },
     {
@@ -1017,9 +1021,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-+jZRrP1ImdwtGv3szBUk\/Ps\/x+23oLVAQ9+HIMSxaAc=",
+      "hash": "sha256-nmfgyGsDqmyDjwq+WOk+Ck0xtDQ+hWLOoedr9G4OqzU=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "3O5yGx57"
+  "version": "\/LzYIDIt"
 };

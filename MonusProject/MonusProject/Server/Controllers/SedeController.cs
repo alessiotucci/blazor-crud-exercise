@@ -34,7 +34,20 @@ namespace MonusProject.Server.Controllers
             else
                 return NotFound();
         }
-        // DELETE: api/Candidato/5
+        // GET: api/Sede/5
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Sede>> GetSede(int id)
+        {
+            var trovataSede = await _context.Sedi.FindAsync(id);
+
+            if (trovataSede == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(trovataSede);
+        }
+        // DELETE: api/Sede/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteSede(int id)
         {

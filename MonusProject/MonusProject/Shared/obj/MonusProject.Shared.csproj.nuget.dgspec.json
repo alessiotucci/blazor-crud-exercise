@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aless\\Fanta\\MonusProject\\MonusProject\\Shared\\MonusProject.Shared.csproj": {}
+    "C:\\Users\\Aless\\PushingP\\MonusProject\\MonusProject\\Shared\\MonusProject.Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aless\\Fanta\\MonusProject\\MonusProject\\Shared\\MonusProject.Shared.csproj": {
+    "C:\\Users\\Aless\\PushingP\\MonusProject\\MonusProject\\Shared\\MonusProject.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aless\\Fanta\\MonusProject\\MonusProject\\Shared\\MonusProject.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\Aless\\PushingP\\MonusProject\\MonusProject\\Shared\\MonusProject.Shared.csproj",
         "projectName": "MonusProject.Shared",
-        "projectPath": "C:\\Users\\Aless\\Fanta\\MonusProject\\MonusProject\\Shared\\MonusProject.Shared.csproj",
+        "projectPath": "C:\\Users\\Aless\\PushingP\\MonusProject\\MonusProject\\Shared\\MonusProject.Shared.csproj",
         "packagesPath": "C:\\Users\\Aless\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aless\\Fanta\\MonusProject\\MonusProject\\Shared\\obj\\",
+        "outputPath": "C:\\Users\\Aless\\PushingP\\MonusProject\\MonusProject\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

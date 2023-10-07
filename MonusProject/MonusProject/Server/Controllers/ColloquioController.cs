@@ -35,6 +35,22 @@ namespace MonusProject.Server.Controllers
             else
                 return NotFound();
         }
+
+        // GET: api/Colloquio/5
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Colloquio>> GetColloquio(int id)
+        {
+            var trovatoColloquio = await _context.Colloqui.FindAsync(id);
+
+            if (trovatoColloquio == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(trovatoColloquio);
+        }
+
+
         // DELETE: api/Colloquio/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteColloquio(int id)

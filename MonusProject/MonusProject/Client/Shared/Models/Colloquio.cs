@@ -11,9 +11,12 @@ namespace MonusProject.Client.Shared.Models
         public DateTime RaiseTimeUTC { get; set; }
         [ForeignKey(nameof(CandidatoId))]
         public int CandidatoId { get; set; }
+
         [ForeignKey(nameof(DipendenteId))]
         public int DipendenteId { get; set; }
 
+        public Dipendente Dipendente { get; set; }
+        public Candidato Candidato { get; set; }
         public Colloquio() { }
         
         
