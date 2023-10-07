@@ -1,39 +1,70 @@
 ﻿@page "/tabellasedi"
+@inject HttpClient Http
+@using MonusProject.Client.Shared.Models;
 
 <PageTitle>Tabella Sedi</PageTitle>
 
 <h3>Tabella Sedi</h3>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>mdo</td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>fat</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td> twitter</td>
-        </tr>
-    </tbody>
-</table>
+@if (Sedi == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var sede in Sedi)
+            {
+                <tr>
+                    <td>@sede.SedeName</td>
+                    <td>@sede.Indirizzo</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Sede</label>
+                <input type="text" class="form-control" required @bind=SedeName>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Indirizzo</label>
+                <input type="text" class="form-control" @bind=Indirizzo>
+            </div>
+            <button type="submit" @onclick="Test" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
 
 @code {
+    public Sede[]? Sedi;
+    public string SedeName;
+    public string Indirizzo;
+    protected override async Task OnInitializedAsync()
+    {
+        Sedi = await Http.GetFromJsonAsync<Sede[]>("api/Sede");
+    }
+    public void Test()
+    {
 
+        return;
+    }
+
+    private async Task GetAllSedi()
+    {
+        var result = await Http.GetAsync("api/Sede");
+    }
 }

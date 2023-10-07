@@ -10,5 +10,15 @@ namespace MonusProject.Client.Shared.Models
 
 		[ForeignKey(nameof(SkillName))]
         public string SkillName { get; set; }
+
+        public Candidato() :base() { }
+
+        public Candidato(string _nome, string _cognome, string _skillname)
+        {
+            Nome = _nome;
+            Cognome = _cognome;
+            SkillName = _skillname;
+        }
     }
+
 }

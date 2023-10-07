@@ -172,6 +172,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.11, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
             }
           },
           "imports": [
@@ -204,7 +208,7 @@
         "projectName": "MonusProject.Shared",
         "projectPath": "C:\\Users\\User\\source\\repos\\hr-management-system\\MonusProject\\MonusProject\\Shared\\MonusProject.Shared.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Source\\Repos\\hr-management-system\\MonusProject\\MonusProject\\Shared\\obj\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\hr-management-system\\MonusProject\\MonusProject\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

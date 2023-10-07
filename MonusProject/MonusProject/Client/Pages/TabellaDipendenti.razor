@@ -1,9 +1,17 @@
 ﻿@page "/tabelladipendenti"
+@inject HttpClient Http
+@using MonusProject.Client.Shared.Models;
 
 <PageTitle>Tabella Dipendenti</PageTitle>
 
 <h3>Tabella Dipendenti</h3>
 
+@if(Dipendenti == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
 <table class="table">
     <thead>
         <tr>
@@ -14,26 +22,55 @@
         </tr>
     </thead>
     <tbody>
+         @foreach (var dipendente in Dipendenti)
+         {
         <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>mdo</td>
+            <td>@dipendente.Nome</td>
+            <td>@dipendente.Cognome</td>
+            <td>@dipendente.SkillName</td>
         </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>fat</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td> twitter</td>
-        </tr>
+         }
     </tbody>
 </table>
+}
+
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Nome</label>
+                <input type="text" class="form-control" required @bind=NomeValore>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Cognome</label>
+                <input type="text" class="form-control" @bind=CognomeValore>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">SkillName</label>
+                <input type="text" class="form-control" @bind=SkillName>
+            </div>
+            <button type="submit" @onclick="Test" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
 
 @code {
+    public Dipendente[]? Dipendenti;
+    public string NomeValore;
+    public string CognomeValore;
+    public string SkillName;
+    protected override async Task OnInitializedAsync()
+    {
+        Dipendenti = await Http.GetFromJsonAsync<Dipendente[]>("api/Dipendente");
+    }
+    public void Test()
+    {
 
+        return;
+    }
+
+    private async Task GetAllDipendenti()
+    {
+        var result = await Http.GetAsync("api/Dipendente");
+    }
 }

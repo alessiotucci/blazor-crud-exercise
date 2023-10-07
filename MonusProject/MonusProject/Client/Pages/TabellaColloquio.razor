@@ -1,0 +1,143 @@
+﻿@page "/tabellacolloqui"
+@inject HttpClient Http
+@using MonusProject.Client.Shared.Models;
+
+<PageTitle>Tabella Candidati</PageTitle>
+<h3>TabellaColloquio</h3>
+
+@if (colloqui == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var colloquio in colloqui)
+            {
+                <tr>
+                    <td>@colloquio.CandidatoId</td>
+                    <td>@colloquio.DipendenteId</td>
+                    <td>@colloquio.RaiseTimeUTC</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div class="card" style="width: 18rem;">
+        <form>
+            <label for="meeting-time">Choose a time for your appointment:</label>
+            <div class="card-body">
+
+                <input type="datetime-local"
+                       id="meeting-time"
+                       name="meeting-time"
+                @bind="valueTime" />
+                @if (candidati == null)
+                {
+                    <h2>Database Vuoto </h2>
+
+
+
+                }
+                else
+                {   
+                    <select @bind="candidatoid">
+                        @foreach (var candidato in candidati)
+                        {
+                        <option value="@candidato.CandidatoId"> @candidato.Nome</option>
+                        }
+                    </select>
+                }
+                <br />
+                <label for=" Referente Tecnico ">Referente Tecnico:</label>
+                @if (dipendenti == null)
+                {
+                    <h3>Database Vuoto</h3>
+                }
+                else
+                {
+                    <select @bind="dipendenteid">
+                        @foreach (var dipendente in dipendenti)
+                        {
+                            <option value="@dipendente.DipendenteId">@dipendente.Nome </option>
+                        }
+                    </select>
+                }
+                <button class="btn-primary" @onclick="Add">  submit </button>
+            </div>
+        </form>
+    </div>
+}
+<style>
+    label {
+        font: 1rem 'Fira Sans', sans-serif;
+        
+    }
+
+    input,
+    label {
+        margin: 0.4rem 0;
+    }
+
+</style>
+ 
+@code {
+    public Colloquio[] colloqui;
+    public Candidato[] candidati;
+    public Dipendente[] dipendenti;
+    public DateTime valueTime;
+    public string value1;
+    public int dipendenteid;
+    public int candidatoid;
+    public string value2;
+    public Colloquio NuovoColloquio = new Colloquio();
+
+    protected override async Task OnInitializedAsync()
+    {
+        colloqui = await Http.GetFromJsonAsync<Colloquio[]>("api/Colloquio");
+        candidati = await Http.GetFromJsonAsync<Candidato[]>("api/Candidato");
+        dipendenti = await Http.GetFromJsonAsync<Dipendente[]>("api/Dipendente");
+    }
+    public async Task Add()
+    {
+        NuovoColloquio.RaiseTimeUTC = valueTime;
+        NuovoColloquio.DipendenteId = dipendenteid;
+        NuovoColloquio.CandidatoId = candidatoid;
+        AddColloquio(NuovoColloquio);
+    }
+
+    public async Task AddColloquio(Colloquio nuovocolloquio)
+    {
+        var response = await Http.PostAsJsonAsync("api/Colloquio", nuovocolloquio);
+
+    }
+
+    public async Task Delete(int id)
+    {
+
+        var response = await Http.DeleteAsync($"api/Colloquio/{id}");
+
+        if (response.IsSuccessStatusCode)
+        {
+            // History item was successfully deleted, update the list
+            colloqui = await Http.GetFromJsonAsync<Colloquio[]>("api/Colloquio");
+        }
+        else
+        {
+            colloqui = null;
+            // Handle the case where deletion was not successful
+            // You can show an error message or take appropriate action
+        }
+
+    }
+
+
+}

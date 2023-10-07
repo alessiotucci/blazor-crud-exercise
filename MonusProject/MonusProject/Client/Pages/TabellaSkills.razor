@@ -1,9 +1,17 @@
 ﻿@page "/tabellaskills"
+@inject HttpClient Http
+@using MonusProject.Client.Shared.Models;
 
 <PageTitle>Tabella Skills</PageTitle>
 
 <h3>Tabella Skills</h3>
 
+@if(Skills == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
 <table class="table">
     <thead>
         <tr>
@@ -14,26 +22,43 @@
         </tr>
     </thead>
     <tbody>
+        @foreach (var skill in Skills)
+        {
         <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>mdo</td>
+            <td>@skill.SkillName</td>
         </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>fat</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td> twitter</td>
-        </tr>
+        }
     </tbody>
 </table>
+}
+
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Skill</label>
+                <input type="text" class="form-control" required @bind=SkillName>
+            </div>
+            <button type="submit" @onclick="Test" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
 
 @code {
+    public Skill[]? Skills;
+    public string SkillName;
+    protected override async Task OnInitializedAsync()
+    {
+        Skills = await Http.GetFromJsonAsync<Skill[]>("api/Skill");
+    }
+    public void Test()
+    {
 
+        return;
+    }
+
+    private async Task GetAllSkills()
+    {
+        var result = await Http.GetAsync("api/Skill");
+    }
 }
