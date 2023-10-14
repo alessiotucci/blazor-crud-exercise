@@ -232,14 +232,14 @@
       "netstandard.dll": "sha256-OYYuPT3JUknj4LdYIa58zF7kDB3tCnLzjCSuhEjtKXM=",
       "System.Private.CoreLib.dll": "sha256-EVS7zPxPV\/41g2mzPwdXtwiigWxI\/SeAHme1IgyD6tc=",
       "MonusProject.Shared.dll": "sha256-qkf4An2G2lsq3TrsYFlmYjmJFHpK8MD2Ojz3sqz4v0g=",
-      "MonusProject.Client.dll": "sha256-mGRrxG8heAS\/z0etShnmCXQdu6DQEKMGMKCZVRrIjv8="
+      "MonusProject.Client.dll": "sha256-ifvFi+qeM+gyzpb+SfHWGw3fv5kskiuYu3qNbX33\/GQ="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "MonusProject.Shared.pdb": "sha256-V52ZH6Qjs0a9HeDGaxXsPo8qzj+uiReAYR5MPz5nwsg=",
-      "MonusProject.Client.pdb": "sha256-\/SCNbVYuJWSaE22r84gJgAAOM7ruAV1m6Ryievn7mh8="
+      "MonusProject.Client.pdb": "sha256-BLOuBLtE+fWdbs16z9RObV+V6AnNH4Vqisy17WeUQzc="
     },
     "runtime": {
       "dotnet.7.0.5.2rdkd92p7k.js": "sha256-codB25EodaFEP43MDCfMBuKXU4LqurUKnQrpoMIFnPs=",

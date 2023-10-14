@@ -24,6 +24,7 @@ else
                 <th>Nome </th>
                 <th>Cognome </th>
                 <th> Skill</th>
+                <th> button </th>
       
             </tr>
         </thead>
@@ -33,9 +34,14 @@ else
                 <tr>
                     <td>@cand.Nome</td>
                     <td>@cand.Cognome</td>
-                    <td>@cand.SkillName</td>
+                    <td> @cand.Skills</td>
+                    <td>
                     <button class="btn-danger" @onclick="() => Delete(cand.CandidatoId)">delete </button>
+                    </td>
+                    <td>
+                        <button class="btn-dark" @onclick="() => PassId(cand.CandidatoId)"> edit this </button>
 
+                    </td>
 
                 </tr>
                 
@@ -49,9 +55,32 @@ else
        <br />
         <input type="text" @bind="value1" placeholder="Cognome" required />
         <br />
-        <input type="text" @bind="value2" placeholder="Skill" required />
+
+        <select   @bind="SkillId">
+            @foreach (var skill in skills)
+            {
+                <option value="@skill.SkillId"> @skill.SkillName</option>
+            }
+
+        </select>
+
         <br /> 
         <button class="btn-primary" @onclick="Add">  submit </button>
+
+    </form>
+</div>
+
+<div class="card" hidden="@hidecard">
+    <h3> aggiornamento</h3>
+    <form>
+        <input type="text" placeholder="Aggiorna il nome" @bind="UpNomeCandid" />
+        <br />
+        <input type="text" placeholder="aggiorna Il cognome" @bind="UpCognomeCandid" />
+        <br />
+        <input type="text" placeholder="aggiorna la skill" @bind="UpSkillCandid" />
+
+
+        <button class="btn-outline-dark" @onclick="Edit">  aggiorna</button>
     </form>
 </div>
 
@@ -89,10 +118,13 @@ else
 
 @code {
     public Candidato[]? candy;
+    public Skill[]? skills;
+
 
     public string value;
     public string value1;
 
+    public int SkillId;
 
     public string value2;
 
@@ -102,18 +134,46 @@ else
     // poppup nice
     public bool HideLabel = true;
     public int Confirmation = 0;
+    // edit button is nice 
+    public bool hidecard = true;
+    public int bogus_id = 0;
+
+    public Candidato UpCandidato = new Candidato();
+    public string UpNomeCandid;
+    public string UpCognomeCandid;
+    public string UpSkillCandid;
+
+
+    public async Task PassId(int id)
+    {
+        bogus_id = id;
+        hidecard = false;
+    }
+    public async Task Edit()
+    {
+        UpCandidato.Nome = UpNomeCandid;
+        UpCandidato.Cognome = UpCognomeCandid;
+        var response = await Http.PutAsJsonAsync($"api/Candidato/{bogus_id}", UpCandidato);
+        if (response.IsSuccessStatusCode)
+            candy = await Http.GetFromJsonAsync<Candidato[]>("api/Candidato");
+
+        hidecard = true;
+
+    }
+
+
 
     protected override async Task OnInitializedAsync()
     {
         candy = await Http.GetFromJsonAsync<Candidato[]>("api/Candidato");
+        skills = await Http.GetFromJsonAsync<Skill[]>("api/Skill");
     }
 
     public  async Task Add()
     {
         IlCandidato.Nome = value;
         IlCandidato.Cognome = value1;
-        IlCandidato.SkillName = value2;
-        AddCandidato(IlCandidato);
+         await AddCandidato(IlCandidato);
         //candy = await Http.GetFromJsonAsync<Candidato[]>("api/Candidato");
 
         
@@ -142,14 +202,14 @@ else
                 // You can show an error message or take appropriate action
          }
     }
-    public async Task DontDelete()
+    public void DontDelete()
     {
         HideLabel = true;
         Confirmation = 2;
         return;
     }
 
-    public async Task YesPlease()
+    public  void YesPlease()
     {
         Confirmation = 1;
         HideLabel = true;

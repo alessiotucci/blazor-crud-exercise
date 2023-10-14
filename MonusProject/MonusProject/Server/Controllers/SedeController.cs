@@ -71,5 +71,28 @@ namespace MonusProject.Server.Controllers
             await _context.SaveChangesAsync();
             return Ok(nuovaSede);
         }
+        //PUT: api/Sede
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateSede(int id, Sede updatedSede)
+        {
+            // Find the sede with the specified ID
+            var existingSede = await _context.Sedi.FindAsync(id);
+
+            if (existingSede == null)
+            {
+                return NotFound(); // Sede not found
+            }
+
+            // Update the sede properties with the new data
+            existingSede.SedeName = updatedSede.SedeName;
+            existingSede.Indirizzo = updatedSede.Indirizzo;
+
+            // Save the changes to the database
+            _context.Sedi.Update(existingSede);
+            await _context.SaveChangesAsync();
+
+            return Ok(existingSede);
+        }
+
     }
 }

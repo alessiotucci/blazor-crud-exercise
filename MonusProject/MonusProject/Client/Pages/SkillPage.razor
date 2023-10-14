@@ -29,7 +29,11 @@ else
             {
                 <tr>
                     <td>@cand.SkillName</td>
-                    <button class="btn-danger" @onclick="() => Delete(cand.SkillId)">delete </button>
+                    <td>
+                        <button class="btn-danger" @onclick="() => Delete(cand.SkillId)">delete </button>
+
+
+                    </td>
                     <td>
                         <input type="text" placeholder=" Aggiorna Skill" @bind="valAggiornato" />
                         <button class="btn-info" @onclick="() => Edit(cand.SkillId)"> Edit </button>
@@ -42,6 +46,7 @@ else
 }
 
 <div class="card">
+    <h4> Insererisci una nuova skill</h4>
     <form>
         <input type="text"  placeholder="Skill" @bind="valSkill" />
         <br />
@@ -104,12 +109,16 @@ else
     public async Task Add()
     {
         NuovaSkill.SkillName = valSkill;
-        AddSkill(NuovaSkill);
+        await AddSkill(NuovaSkill);
     }
 
     public async Task AddSkill(Skill nuovaskill)
     {
         var response = await Http.PostAsJsonAsync("api/Skill", nuovaskill);
+        if (response.IsSuccessStatusCode)
+        {
+            HideLabel = false;
+        }
 
     }
 

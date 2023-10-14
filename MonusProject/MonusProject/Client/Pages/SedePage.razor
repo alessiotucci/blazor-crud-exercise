@@ -24,6 +24,7 @@ else
             <tr>
                 <th>Nome Sede </th>
                 <th>Indirizzo </th>
+                
             </tr>
         </thead>
         <tbody>
@@ -32,9 +33,10 @@ else
                 <tr>
                     <td>@cand.SedeName</td>
                     <td>@cand.Indirizzo</td>
-                    <button class="btn-danger" @onclick="() => Delete(cand.SedeId)">delete </button>
-                    <button class="btn-danger"> </button>
-
+                   <td> <button class="btn-danger" @onclick="() => Delete(cand.SedeId)">delete </button> </td>
+                   <td>
+                    <button class="btn-dark" @onclick="() => EditThis(cand.SedeId)"> update this </button>
+                    </td>
                 </tr>
 
             }
@@ -43,6 +45,7 @@ else
 }
 
 <div class="card">
+    <h3> Inserisci una nuova sede!</h3>
     <form>
         <input type="text" placeholder="Nome della Sede" @bind="valNomeSede" />
         <br />
@@ -50,6 +53,19 @@ else
         <br />
 
         <button class="btn-primary" @onclick="Add">  submit </button>
+    </form>
+</div>
+
+<div class="card" hidden="@flag_da_provare" >
+    <h3>Aggiorna La Sede</h3>
+    <form>
+        <input type="text" placeholder="Aggiorna il nome" @bind="upNomeSede" />
+        <br />
+        <input type="text" placeholder="aggiorna Indirizzo della Sede" @bind="upSedeIndiriz" />
+        <br />
+
+        <button class="btn-outline-dark" @onclick="Edit">  aggiorna</button>
+        <button class="btn-secondary" > nascondi</button>
     </form>
 </div>
 
@@ -91,13 +107,27 @@ else
     public string valNomeSede;
     public string valSedeIndirizz;
 
+
+    public string upNomeSede;
+    public string upSedeIndiriz;
+
     // poppup nice
     public bool HideLabel = true;
     public int Confirmation = 0;
 
+    int Id_da_provare = 0;
+    public bool flag_da_provare = true;
 
     public Sede NuovaSede = new Sede();
+    public Sede AggiornaSede = new Sede();
 
+    public async Task EditThis(int id)
+    {
+        Id_da_provare = id;
+        flag_da_provare = false;
+    }
+
+ 
 
     protected override async Task OnInitializedAsync()
     {
@@ -109,7 +139,7 @@ else
     {
         NuovaSede.SedeName = valNomeSede;
         NuovaSede.Indirizzo = valSedeIndirizz;
-       await AddSede(NuovaSede);
+        await AddSede(NuovaSede);
     }
 
 
@@ -139,6 +169,21 @@ else
 
 
     }
+
+
+    public async Task Edit()
+    {
+        AggiornaSede.Indirizzo = upSedeIndiriz;
+        AggiornaSede.SedeName = upNomeSede;
+        var response = await Http.PutAsJsonAsync($"api/Sede/{Id_da_provare}", AggiornaSede);
+        if (response.IsSuccessStatusCode)
+            Sedi = await Http.GetFromJsonAsync<Sede[]>("api/Sede");
+
+
+    }
+
+
+
     public async Task DontDelete()
     {
         HideLabel = true;

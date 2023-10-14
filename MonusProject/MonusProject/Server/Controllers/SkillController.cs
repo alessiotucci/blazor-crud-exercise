@@ -70,8 +70,9 @@ namespace MonusProject.Server.Controllers
         public async Task<IActionResult> AddSkill(Skill nuovaSkill)
         {
             // Add the new Candidato to the context and save changes to the database
-            _context.Skills.AddAsync(nuovaSkill);
+            var response = await _context.Skills.AddAsync(nuovaSkill);
             await _context.SaveChangesAsync();
+            
             return Ok(nuovaSkill);
         }
 

@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\service-worker.js"
     },
     {
+      "Id": "C:\\Users\\Aless\\PushingPPPiss\\MonusProject\\MonusProject\\Client\\wwwroot\\css\\StyleSheet.css",
+      "PackagePath": "staticwebassets\\css\\StyleSheet.css"
+    },
+    {
       "Id": "C:\\Users\\Aless\\PushingPPPiss\\MonusProject\\MonusProject\\Client\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },

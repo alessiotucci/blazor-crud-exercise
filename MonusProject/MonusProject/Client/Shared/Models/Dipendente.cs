@@ -7,8 +7,8 @@ namespace MonusProject.Client.Shared.Models
     {
         [Key]
         public int DipendenteId { get; set; }
-        [ForeignKey(nameof(SkillName))]
-        public string SkillName { get; set; }
+        public ICollection<Skill> Skills { get; set; }
+
 
         public Dipendente() { }
     }

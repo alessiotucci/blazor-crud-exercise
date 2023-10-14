@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "38pXScFyjnqO6yG6i6H7RD0QvvtwN3QQgKGPssGtidA=",
+  "Hash": "93cQIBgoYlNlx3I+vR4rimXXiq6JXZNvoU0xDRsw3wI=",
   "Source": "MonusProject.Server",
   "BasePath": "_content/MonusProject.Server",
   "Mode": "Default",
@@ -8323,6 +8323,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
+    },
+    {
+      "Identity": "C:\\Users\\Aless\\PushingPPPiss\\MonusProject\\MonusProject\\Client\\wwwroot\\css\\StyleSheet.css",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Aless\\PushingPPPiss\\MonusProject\\MonusProject\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\StyleSheet.css"
     },
     {
       "Identity": "C:\\Users\\Aless\\PushingPPPiss\\MonusProject\\MonusProject\\Client\\wwwroot\\favicon.png",

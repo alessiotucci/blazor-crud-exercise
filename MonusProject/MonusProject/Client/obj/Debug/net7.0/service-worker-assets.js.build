@@ -49,6 +49,10 @@
       "url": "css\/open-iconic\/README.md"
     },
     {
+      "hash": "sha256-AdRkuKmkoJIYfZpdeGrGTocV+kJ+D+PCuA5XFwPzOFo=",
+      "url": "css\/StyleSheet.css"
+    },
+    {
       "hash": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=",
       "url": "favicon.png"
     },
@@ -61,7 +65,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-mM0xFUIZJ8udVN1k9V70zOy8QGjUla7Xjz88unZrlf8=",
+      "hash": "sha256-Zlyx0esN6Izwq4WbWYNyrDEgiQWnQne4FDqFD2BvHZE=",
       "url": "index.html"
     },
     {
@@ -1009,11 +1013,11 @@
       "url": "_framework\/MonusProject.Shared.pdb"
     },
     {
-      "hash": "sha256-TWjSmLzyAw54a9zXspxh4Q1dL6icbkVbHRWGPf+kSmg=",
+      "hash": "sha256-UMqJQDE2FLrbkGWyLti3sn7ivITx7LKZqE\/xEQ4wrbQ=",
       "url": "_framework\/MonusProject.Client.dll"
     },
     {
-      "hash": "sha256-rReCBqHQ2IQsT5xjmr\/b06\/8fDsAN867mvHAogoOAFs=",
+      "hash": "sha256-RmbV4YBAzuRjQUUxekBxWkvItS8P6aKj44OzkcDFRKk=",
       "url": "_framework\/MonusProject.Client.pdb"
     },
     {
@@ -1021,9 +1025,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-4b6A9s1+SOY1cKDlR3EQ5Fq0dDGmP2gl9lE6qBB9xNc=",
+      "hash": "sha256-2YJ27+Azab3xW97E0H\/LatxCZnFOme1QEX\/lC\/CcNak=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "GzFOCuby"
+  "version": "+JI5RzVT"
 };

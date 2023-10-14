@@ -75,6 +75,30 @@ namespace MonusProject.Server.Controllers
             await _context.SaveChangesAsync();
             return Ok(nuovoColloquio);
         }
+        //PUT: api/Colloquio
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateColloquio(int id, Colloquio updatedColloquio)
+        {
+            // Find the Colloquio with the specified ID
+            var existingColloquio = await _context.Colloqui.FindAsync(id);
+
+            if (existingColloquio == null)
+            {
+                return NotFound(); // Colloquio not found
+            }
+
+            // Update the Colloquio properties with the new data
+            existingColloquio.RaiseTimeUTC = updatedColloquio.RaiseTimeUTC;
+            existingColloquio.CandidatoId = existingColloquio.CandidatoId;
+            existingColloquio.DipendenteId = updatedColloquio.DipendenteId;
+
+            // Save the changes to the database
+            _context.Colloqui.Update(existingColloquio);
+            await _context.SaveChangesAsync();
+
+            return Ok(existingColloquio);
+        }
+
 
     }
 }

@@ -32,10 +32,15 @@ else
                 <tr>
                     <td>@cand.Nome</td>
                      <td>@cand.Cognome</td>
-                    <td>@cand.SkillName</td>
+                    <td>
+                        <button class="btn-danger" @onclick="() => Delete(cand.DipendenteId)">delete </button>
 
-                    <button class="btn-danger" @onclick="() => Delete(cand.DipendenteId)">delete </button>
-                    <button class="btn-danger"> </button>
+                    </td>
+                    <td>
+                        <button class="btn-dark" @onclick="() => PassId(cand.DipendenteId)"> edit  </button>
+
+
+                    </td>
 
                 </tr>
 
@@ -45,6 +50,7 @@ else
 }
 
 <div class="card">
+    <h3> Nuovo dipendente </h3>
     <form>
         <input type="text" placeholder="Nome Dipendente"  @bind="valNome"/>
         <br />
@@ -53,6 +59,18 @@ else
         <input type="text" placeholder="Skill Dipendente"  @bind="valSkill"/>
         <br />
         <button class="btn-primary" @onclick="Add">  submit </button>
+    </form>
+</div>
+<div class="card" hidden="@hidecard">
+    <h3> aggiorna dipendente </h3>
+    <form>
+        <input type="text" placeholder="aggiorna il nome" @bind="updateNome" />
+        <br />
+        <input type="text" placeholder="aggiorna il cognome" @bind="updateCognome" />
+        <br />
+        <input type="text" placeholder="aggiorna la skill" @bind="updateSkill" />
+        <br />
+        <button class="btn-primaryactive" @onclick="Edit">  Aggiorna </button>
     </form>
 </div>
 
@@ -91,16 +109,42 @@ else
 
 @code {
     public Dipendente[] dipendenti;
+
+
     public string valNome;
     public string valCognome;
-
     public string valSkill;
+
+    public string updateNome;
+    public string updateCognome;
+    public string updateSkill;
+    public Dipendente UpdateDipendente = new Dipendente();
 
     public Dipendente NuovoDipendente = new Dipendente();
 
     // poppup nice
     public bool HideLabel = true;
     public int Confirmation = 0;
+
+    // edit button is nice
+    public bool hidecard = true;
+    public int bogus_id = 0;
+    public async Task PassId(int id)
+    {
+        bogus_id = id;
+        hidecard = false;
+    }
+    public async Task Edit()
+    {
+        UpdateDipendente.Nome = updateNome;
+        UpdateDipendente.Cognome = updateCognome;
+        var response = await Http.PutAsJsonAsync($"api/Dipendente/{bogus_id}", UpdateDipendente);
+        if (response.IsSuccessStatusCode)
+            dipendenti = await Http.GetFromJsonAsync<Dipendente[]>("api/Dipendente");
+
+        hidecard = true;
+
+    }
 
     protected override async Task OnInitializedAsync()
     {
@@ -111,7 +155,6 @@ else
     {
         NuovoDipendente.Nome = valNome;
         NuovoDipendente.Cognome = valCognome;
-        NuovoDipendente.SkillName = valSkill;
         AddDipendente(NuovoDipendente);
     }
 

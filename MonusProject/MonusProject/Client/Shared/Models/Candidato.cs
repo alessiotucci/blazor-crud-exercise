@@ -7,17 +7,15 @@ namespace MonusProject.Client.Shared.Models
     {
         [Key] 
         public int CandidatoId { get; set; }
+        public ICollection<Skill> Skills { get; set; }
 
-		[ForeignKey(nameof(SkillName))]
-        public string SkillName { get; set; }
-  public Candidato() : base() { }
+        public Candidato() : base() { }
 
         //construttore custom 
-       public Candidato(string _nome, string _cognome, string _skillname) : base()
+       public Candidato(string _nome, string _cognome) : base()
         {
             Nome = _nome;
             Cognome = _cognome;
-            SkillName = _skillname;
 
         }
         

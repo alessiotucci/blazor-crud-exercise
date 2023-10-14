@@ -74,7 +74,29 @@ namespace MonusProject.Server.Controllers
 
             return NoContent();
         }
+        //PUT: api/Candidato
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateDipendente(int id, Candidato updatedCandidato)
+        {
+            // Find the Candidato with the specified ID
+            var existingCandidato = await _context.Candidati.FindAsync(id);
 
-       
+            if (existingCandidato == null)
+            {
+                return NotFound(); // Candidato not found
+            }
+
+            // Update the Candidato properties with the new data
+            existingCandidato.Nome = updatedCandidato.Nome;
+            existingCandidato.Cognome = updatedCandidato.Cognome;
+
+            // Save the changes to the database
+            _context.Candidati.Update(existingCandidato);
+            await _context.SaveChangesAsync();
+
+            return Ok(existingCandidato);
+        }
+
+
     }
 }

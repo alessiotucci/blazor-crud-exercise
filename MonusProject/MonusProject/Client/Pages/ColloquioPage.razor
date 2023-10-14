@@ -42,9 +42,14 @@ else
                     <td>@cand.RaiseTimeUTC</td>
                     <td>@cand.DipendenteId</td>
                     <td>@cand.CandidatoId</td>
-                    <button class="btn-danger" @onclick="() => Delete(cand.ColloquioId)">delete </button>
-                    <button class="btn-danger"> </button>
+                    <td>
+                        <button class="btn-danger" @onclick="() => Delete(cand.ColloquioId)">delete </button>
+                    </td>
+                    
+                    <td>
+                        <button class="btn-dark" @onclick="() => PassId(cand.ColloquioId)"> edit  </button>
 
+                    </td>
                 </tr>
 
             }
@@ -53,6 +58,7 @@ else
 }
 
 <div class="card">
+    <h2> nuovo colloquio</h2>
     <form>
         <input type="datetime-local" placeholder="Orario del Colloquio" @bind="valueTime" />
         <br />
@@ -96,6 +102,55 @@ else
 
     </form>
 </div>
+
+
+
+<div class="card" hidden="@hidecard">
+    <h2>aggiorna colloquio esistente</h2>
+    <form>
+        <input type="datetime-local" placeholder="aggiorna orario del Colloquio" @bind="UpdatedTime" />
+        <br />
+        <label for=" Candidato ">Candidato:</label>
+        @if (candidati == null)
+        {
+            <h2>aggiornamento in corso </h2>
+
+
+
+        }
+        else
+        {
+            <select @bind="UPdatedCanId">
+                @foreach (var candidato in candidati)
+                {
+
+
+                    <option value="@candidato.CandidatoId"> @candidato.Nome</option>
+                }
+
+            </select>
+
+        }
+        <br />
+        <label for=" Referente Tecnico ">Referente Tecnico:</label>
+        @if (dipendenti == null)
+        {
+            <h3>aggiornamento in corso</h3>
+        }
+        else
+        {
+            <select @bind="UpdatedDipId">
+                @foreach (var dipendente in dipendenti)
+                {
+                    <option value="@dipendente.DipendenteId">@dipendente.Nome </option>
+                }
+            </select>
+        }
+        <button class="btn-primary" @onclick="Edit"> aggiorna </button>
+
+    </form>
+</div>
+
 
 <style>
 
@@ -143,6 +198,36 @@ else
 
     public bool HideLabel = true;
     public int Confirmation = 0;
+
+    // edit button is nice
+    public bool hidecard = true;
+    public int bogus_id = 0;
+
+    // update setting
+    public DateTime UpdatedTime;
+    public int UpdatedDipId;
+    public int UPdatedCanId;
+    public Colloquio UpdatedColloquio = new Colloquio();
+
+
+    public async Task PassId(int id)
+    {
+        bogus_id = id;
+        hidecard = false;
+    }
+    public async Task Edit()
+    {
+        UpdatedColloquio.RaiseTimeUTC = UpdatedTime;
+        UpdatedColloquio.DipendenteId = UpdatedDipId;
+        UpdatedColloquio.CandidatoId = UPdatedCanId;
+        var response = await Http.PutAsJsonAsync($"api/Colloquio/{bogus_id}", UpdatedColloquio);
+        if (response.IsSuccessStatusCode)
+            colloqui = await Http.GetFromJsonAsync<Colloquio[]>("api/Colloquio");
+
+        hidecard = true;
+
+    }
+
 
     protected override async Task OnInitializedAsync()
     {
