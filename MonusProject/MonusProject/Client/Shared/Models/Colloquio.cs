@@ -15,8 +15,6 @@ namespace MonusProject.Client.Shared.Models
         [ForeignKey(nameof(DipendenteId))]
         public int DipendenteId { get; set; }
 
-        public Dipendente Dipendente { get; set; }
-        public Candidato Candidato { get; set; }
         public Colloquio() { }
         
         

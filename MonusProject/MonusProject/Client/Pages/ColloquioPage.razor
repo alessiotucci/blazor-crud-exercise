@@ -4,13 +4,18 @@
 @using MonusProject.Client.Helper
 @using MonusProject.Client.Shared.Models
 
-<h3>Colloquio</h3>
-
+@if (colloqui != null)
+{
+    <h3>Colloquio</h3>
+}
+else{
+    <h4> something is wrong, colloqui is null</h4>
+}
 
 @if (colloqui == null)
 {
     <p><em>Loading...</em></p>
-    
+
 }
 else
 {
@@ -18,11 +23,8 @@ else
         <thead>
             <tr>
                 <th>orario del colloquio </th>
-                <th>Referente Tecnico </th>
-                <th>Candidato </th>
-                <th>extra </th>
-
-
+                <th>dipendenteid</th>
+                <th>candidatoid</th>
             </tr>
         </thead>
         <tbody>
@@ -30,16 +32,13 @@ else
             {
                 <tr>
                     <td>@cand.RaiseTimeUTC</td>
-                   <td> <button type="button" class="btn btn-outline-warning">@cand.DipendenteId</button>
-                    </td>
-                    <td><button @onclick="() =>ShowCandidato(cand.CandidatoId)" type="button" class="btn btn-outline-warning">@cand.CandidatoId</button>
-                    </td>
-                    <td> extra</td>
-
+                    <td>@cand.DipendenteId</td>
+                    <td>@cand.CandidatoId</td>
                     <button class="btn-danger" @onclick="() => Delete(cand.ColloquioId)">delete </button>
+                    <button class="btn-danger"> </button>
 
                 </tr>
-                
+
             }
         </tbody>
     </table>
@@ -49,112 +48,46 @@ else
     <form>
         <input type="datetime-local" placeholder="Orario del Colloquio" @bind="valueTime" />
         <br />
-
-        <label for="candidato">Scegli un Candidato</label>
-        <br />
-        @if (potenzialiCandidati != null)
+        <label for=" Candidato ">Candidato:</label>
+        @if (candidati == null)
         {
-            <select @bind="CanId">
-                @foreach (var x in potenzialiCandidati)
+            <h2>Database Vuoto </h2>
+
+
+
+        }
+        else
+        {
+            <select @bind="candidatoid">
+                @foreach (var candidato in candidati)
                 {
-                    <option value="@x.CandidatoId">@x.Nome @x.Cognome </option>
+
+
+                    <option value="@candidato.CandidatoId"> @candidato.Nome</option>
+                }
+
+            </select>
+
+        }
+        <br />
+        <label for=" Referente Tecnico ">Referente Tecnico:</label>
+        @if (dipendenti == null)
+        {
+            <h3>Database Vuoto</h3>
+        }
+        else
+        {
+            <select @bind="dipendenteid">
+                @foreach (var dipendente in dipendenti)
+                {
+                    <option value="@dipendente.DipendenteId">@dipendente.Nome </option>
                 }
             </select>
         }
-        else
-        {
-            <h3> database is loading</h3>
-        }
-        <br />
+        <button class="btn-primary" @onclick="Add">  submit </button>
 
-        <label for="dipendente">Scegli un Referente Tecnico</label>
-        <br />
-        @if (referentiTecnici != null)
-        {
-            <select @bind="DipId">
-            @foreach (var x in referentiTecnici)
-            {
-                <option value="@x.DipendenteId">@x.Nome @x.Cognome</option>
-            }
-            </select>
-        }
-        else
-        {
-            <h3> database is loading</h3>
-        }
-        <br />
-        <button class="btn-primary" @onclick="Add">  submit alright </button>
     </form>
 </div>
-
-
-<div style="display: flex;">
-
-
-@if (test != null)
-{
-
-    <div class="card" >
-        <h2>Candidato Details </h2>
-        <p>@test.Nome </p>
-        <p>@test.Cognome</p>
-        <p> Skill: @test.SkillName</p>
-
-
-    </div>
-}
-
-<div class="card">
-    <h2> Referente Details</h2>
-    <p>Name: </p>
-    <p>Cognome:</p>
-    <p> Skill</p>
-
-
-</div>
-</div>
-<card>
-<div class="popup-content" hidden="@HideLabel">
-    <div id="popup">
-            <p style="color: white; font-size: 24px;">Are you sure to delete this?</p>
-            <button class="btn-outline-primary" @onclick="@Toggle"> yes </button>
-    </div>
-    
-</div>  
-</card>
-
-<style>
-    #popup {
-        position: fixed;
-           top: 20%;
-        left: 30%;
-        right: 30%;
-        bottom: 20%;
-        
-        width: 530px;
-        height:230px;
-        background-color: red; /* Change to your desired primary red color */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-        #popup p {
-            color: white; /* Text color inside the popup */
-        }
-</style>
-
-
-<button class="btn-outline-primary" @onclick="@Toggle">Show/Hide</button>
-
-
-
-
-
-
-
-
 
 <style>
 
@@ -189,86 +122,56 @@ else
 </style>
 
 @code {
-    private bool HideLabel { get; set; } = true;
-    private void Toggle()
-    {
-        HideLabel = !HideLabel;
-    }
     public Colloquio[]? colloqui;
-    public Candidato[]? potenzialiCandidati;
-    public Dipendente[]? referentiTecnici;
+    public Candidato[]? candidati;
+    public Dipendente[]? dipendenti;
     public DateTime valueTime;
     public string value1;
-
+    public int dipendenteid;
+    public int candidatoid;
     public string value2;
-    public int DipId;
-    public int CanId;
-
-    public Candidato test;
-    public Dipendente test2;
-    // Single object
     public Colloquio NuovoColloquio = new Colloquio();
+
 
     protected override async Task OnInitializedAsync()
     {
         colloqui = await Http.GetFromJsonAsync<Colloquio[]>("api/Colloquio");
-        potenzialiCandidati = await Http.GetFromJsonAsync<Candidato[]>("api/Candidato");
-        referentiTecnici = await Http.GetFromJsonAsync<Dipendente[]>("api/Dipendente");
-
-    }
-    public async Task ShowCandidato(int id)
-    {
-        GetById(id);   
+        candidati = await Http.GetFromJsonAsync<Candidato[]>("api/Candidato");
+        dipendenti = await Http.GetFromJsonAsync<Dipendente[]>("api/Dipendente");
     }
     public async Task Add()
     {
         NuovoColloquio.RaiseTimeUTC = valueTime;
-        NuovoColloquio.DipendenteId = DipId;
-        NuovoColloquio.CandidatoId = CanId;
-        AddColloquio(NuovoColloquio);
-    }
-
-    public async Task GetById(int id)
-    {
-        test = await Http.GetFromJsonAsync<Candidato>($"api/Candidato/{id}");
+        NuovoColloquio.DipendenteId = dipendenteid;
+        NuovoColloquio.CandidatoId = candidatoid;
+        await AddColloquio(NuovoColloquio);
     }
 
     public async Task AddColloquio(Colloquio nuovocolloquio)
     {
         var response = await Http.PostAsJsonAsync("api/Colloquio", nuovocolloquio);
-
-    }
-
-    
-   
+        Console.WriteLine("adding the colloquio");
 
 
-    public ValueTask<bool> DeletePopUp()
-    {
-        return js.Confirm("are you sure to delete this stuff?");
     }
 
     public async Task Delete(int id)
     {
-       // HideLabel = !HideLabel;
 
-        bool confirmation = await DeletePopUp();
-        if (confirmation)
+        var response = await Http.DeleteAsync($"api/Colloquio/{id}");
+
+        if (response.IsSuccessStatusCode)
         {
-            var response = await Http.DeleteAsync($"api/Colloquio/{id}");
-
-            if (response.IsSuccessStatusCode)
-            {
-                // History item was successfully deleted, update the list
-                colloqui = await Http.GetFromJsonAsync<Colloquio[]>("api/Colloquio");
-            }
-            else
-            {
-                colloqui = null;
-                // Handle the case where deletion was not successful
-                // You can show an error message or take appropriate action
-            }
+            // History item was successfully deleted, update the list
+            colloqui = await Http.GetFromJsonAsync<Colloquio[]>("api/Colloquio");
         }
+        else
+        {
+            colloqui = null;
+            // Handle the case where deletion was not successful
+            // You can show an error message or take appropriate action
+        }
+
 
     }
 

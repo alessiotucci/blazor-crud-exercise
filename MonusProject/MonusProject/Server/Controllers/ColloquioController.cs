@@ -71,7 +71,7 @@ namespace MonusProject.Server.Controllers
         public async Task<IActionResult> AddColloquio(Colloquio nuovoColloquio)
         {
             // Add the new Candidato to the context and save changes to the database
-            _context.Colloqui.AddAsync(nuovoColloquio);
+            await _context.Colloqui.AddAsync(nuovoColloquio);
             await _context.SaveChangesAsync();
             return Ok(nuovoColloquio);
         }
