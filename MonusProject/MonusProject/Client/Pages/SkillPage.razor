@@ -30,8 +30,10 @@ else
                 <tr>
                     <td>@cand.SkillName</td>
                     <button class="btn-danger" @onclick="() => Delete(cand.SkillId)">delete </button>
-                    <button class="btn-danger"> </button>
-
+                    <td>
+                        <input type="text" placeholder=" Aggiorna Skill" @bind="valAggiornato" />
+                        <button class="btn-info" @onclick="() => Edit(cand.SkillId)"> Edit </button>
+                    </td>
                 </tr>
 
             }
@@ -46,6 +48,8 @@ else
         <button class="btn-primary" @onclick="Add">  submit </button>
     </form>
 </div>
+
+
 
 <style>
 
@@ -83,6 +87,9 @@ else
     public Skill[] skills;
     public string valSkill;
 
+    public string valAggiornato;
+
+    public Skill UpdatedSkill = new Skill();
     public Skill NuovaSkill = new Skill();
 
     // poppup nice
@@ -125,6 +132,18 @@ else
             // Handle the case where deletion was not successful
             // You can show an error message or take appropriate action
         }
+
+
+    }
+
+  
+    public async Task Edit(int id)
+    {
+        UpdatedSkill.SkillName = valAggiornato;
+
+        var response = await Http.PutAsJsonAsync($"api/Skill/{id}", UpdatedSkill);
+        if (response.IsSuccessStatusCode)
+            skills = await Http.GetFromJsonAsync<Skill[]>("api/Skill");
 
 
     }

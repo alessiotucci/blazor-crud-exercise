@@ -75,5 +75,28 @@ namespace MonusProject.Server.Controllers
             return Ok(nuovaSkill);
         }
 
+        //PUT: api/Skill
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateSkill(int id, Skill updatedSkill)
+        {
+            // Find the skill with the specified ID
+            var existingSkill = await _context.Skills.FindAsync(id);
+
+            if (existingSkill == null)
+            {
+                return NotFound(); // Skill not found
+            }
+
+            // Update the skill properties with the new data
+            existingSkill.SkillName = updatedSkill.SkillName;
+
+            // Save the changes to the database
+            _context.Skills.Update(existingSkill);
+            await _context.SaveChangesAsync();
+
+            return Ok(existingSkill);
+        }
+
+
     }
 }
