@@ -25,5 +25,45 @@ namespace MonusProject.Server.Controllers
             return Ok(skills);
             return BadRequest();
         }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Skill>> GetSkill(int id)
+        {
+            var findSkill = await _context.Skills.FindAsync(id);
+
+            if (findSkill == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(findSkill);
+        }
+
+        //POST: api/Skill
+        [HttpPost]
+        public async Task<IActionResult> AddSkill(Skill nuovaSkill)
+        {
+            //Add the new skill to the context and save changes to the database
+            _context.Skills.AddAsync(nuovaSkill);
+            await _context.SaveChangesAsync();
+            return Ok(nuovaSkill);
+        }
+
+        // DELETE: api/Skill
+        [HttpDelete("{id:int}")]
+
+        public async Task<IActionResult> DeleteSkill(int id)
+        {
+            var skill = await _context.Skills.FindAsync(id);
+            if (skill == null)
+            {
+                return NotFound();
+            }
+
+            _context.Skills.Remove(skill);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
     }
 }

@@ -19,6 +19,7 @@ else
             <th scope="col">First</th>
             <th scope="col">Last</th>
             <th scope="col">Handle</th>
+            <th scope="col">Edit</th>
         </tr>
     </thead>
     <tbody>
@@ -28,14 +29,17 @@ else
             <td>@candidato.Nome</td>
             <td>@candidato.Cognome</td>
             <td>@candidato.SkillName</td>
+            <td><button type="button" @onclick="() => Delete(candidato.CandidatoId)" class="btn btn-danger">Delete</button></td>
+            <td><button type="button" @onclick="() => EditButton(candidato)" class="btn btn-danger">Edit</button></td>
         </tr>
         }
     </tbody>
 </table>
 }
 
-<div class="card" style="width: 18rem;">
+<div class="divAggiunta card mt-5" style="width: 18rem;">
     <div class="card-body">
+        <h2 class="text-center">Aggiungi</h2>
         <form>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Nome</label>
@@ -43,21 +47,49 @@ else
             </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Cognome</label>
-                <input type="text" class="form-control" @bind=CognomeValore>
+                <input type="text" class="form-control" required @bind=CognomeValore>
             </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">SkillName</label>
-                <input type="text" class="form-control" @bind=SkillName>
+                <input type="text" class="form-control" required @bind=SkillName>
             </div>
-            <button type="submit" @onclick="Test" class="btn btn-primary">Submit</button>
+            <button type="button" @onclick="Aggiungi" class="btn btn-primary">Submit</button>
         </form>
     </div>
 </div>
+@if (isEdit) 
+{
+    <div class="divModifica card mt-5" style="width: 18rem;">
+        <div class="card-body">
+            <h2 class="text-center">Modifica</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Nome</label>
+                    <input type="text" class="form-control" required @bind=Modificato.Nome >
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Cognome</label>
+                    <input type="text" class="form-control" required @bind=Modificato.Cognome>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">SkillName</label>
+                    <input type="text" class="form-control" required @bind=Modificato.SkillName>
+                </div>
+                <button type="button" @onclick="UpdateCandidato" class="btn btn-primary">Submit</button>
+                <button type="button" @*@onclick=""*@ class="btn btn-danger">Annulla</button>
+            </form>
+        </div>
+    </div>
+} 
 
  
 
 @code {
     public Candidato[]? Candidati;
+    Candidato Aggiunto = new Candidato();
+    Candidato Modificato = new Candidato();
+    bool isEdit = false;
+
     public string NomeValore;
     public string CognomeValore;
     public string SkillName ;
@@ -65,14 +97,69 @@ else
     {
         Candidati = await Http.GetFromJsonAsync<Candidato[]>("api/Candidato");
     }
-    public void Test()
-    {
-
-        return;
-    }
 
     private async Task GetAllCandidati()
     {
         var result = await Http.GetAsync("api/Candidato");
+    }
+
+    public async Task Delete(int id)
+    {
+        var response = await Http.DeleteAsync($"api/Candidato/{id}");
+
+        if (response.IsSuccessStatusCode)
+        {
+            // Candidato item is succesfully deleted, update the list
+            Candidati = await Http.GetFromJsonAsync<Candidato[]>("api/Candidato");
+        }
+        else
+        {
+            Candidati = null;
+        }
+    }
+
+    public async Task GetbyId(int id)
+    {
+        await Http.GetFromJsonAsync<Candidato>($"api/Candidato/{id}");
+    }
+
+    public async Task Aggiungi()
+    {
+        Aggiunto.Nome = NomeValore;
+        Aggiunto.Cognome = CognomeValore;
+        Aggiunto.SkillName = SkillName;
+
+        await AddCandidato(Aggiunto);
+        Candidati = await Http.GetFromJsonAsync<Candidato[]>("api/Candidato");
+    }
+
+    public async Task AddCandidato(Candidato nuovoCandidato)
+    {
+        await Http.PostAsJsonAsync("api/Candidato", nuovoCandidato);
+    }
+
+    public async Task Put()
+    {
+        Modificato.Nome = NomeValore;
+        Modificato.Cognome = CognomeValore;
+        Modificato.SkillName = SkillName;
+
+        //await UpdateCandidato(Modificato);
+        var response = await Http.PutAsJsonAsync($"api/Candidato/", Modificato);
+        Candidati = await Http.GetFromJsonAsync<Candidato[]>("api/Candidato");
+    }
+
+    public async Task UpdateCandidato()
+    {
+        var response = await Http.PostAsJsonAsync($"api/Candidato/UpdateCandidato/{Modificato.CandidatoId}", Modificato);
+        Candidati = await Http.GetFromJsonAsync<Candidato[]>("api/Candidato");
+    }
+
+    protected virtual void EditButton(Candidato candidato)
+    {
+        isEdit = true;
+        Modificato = candidato;
+
+        //Click += new EventHandler();
     }
 }

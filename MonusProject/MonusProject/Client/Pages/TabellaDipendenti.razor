@@ -28,6 +28,7 @@ else
             <td>@dipendente.Nome</td>
             <td>@dipendente.Cognome</td>
             <td>@dipendente.SkillName</td>
+                    <td><button type="button" @onclick = "()=> Delete(dipendente.DipendenteId)"class="btn btn-danger">Delete</button></td>
         </tr>
          }
     </tbody>
@@ -72,5 +73,20 @@ else
     private async Task GetAllDipendenti()
     {
         var result = await Http.GetAsync("api/Dipendente");
+    }
+
+    public async Task Delete(int id)
+    {
+        var response = await Http.DeleteAsync($"api/Dipendente/{id}");
+
+        if (response.IsSuccessStatusCode)
+        {
+            // Dipendente item is succesfully deleted, update the list
+            Dipendenti = await Http.GetFromJsonAsync<Dipendente[]>("api/Dipendente");
+        }
+        else
+        {
+            Dipendenti = null;
+        }
     }
 }

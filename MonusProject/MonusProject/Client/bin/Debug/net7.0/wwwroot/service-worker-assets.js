@@ -1,7 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-uhotZszkBLq\/V8xt8UtpU6lGHEIqbqLsFUVGyelV2TU=",
+      "hash": "sha256-G43nnn7VJnP8XMc8cMc95SKogQ64xl0J2DAcVxYSAvE=",
       "url": "css\/app.css"
     },
     {
@@ -1005,11 +1005,11 @@
       "url": "_framework\/MonusProject.Shared.pdb"
     },
     {
-      "hash": "sha256-SQkLAI1jo+O8O2pBxk9k5QQgBoV90wLZXv89J7Q3BS4=",
+      "hash": "sha256-NiLBFSL7g526hARwYIx67CVixwUdLSsfTF\/CpmmqCz4=",
       "url": "_framework\/MonusProject.Client.dll"
     },
     {
-      "hash": "sha256-MHQGwHNCMcF40lSldiCAXL+byIVceBQkjfdZYCfF\/0E=",
+      "hash": "sha256-g7VLhZw+0iImcuKLxwvpE0ZEBWNvq1ncUA6kFuifsS8=",
       "url": "_framework\/MonusProject.Client.pdb"
     },
     {
@@ -1017,9 +1017,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-8JgIITmg2CkPWdGbLuI+2UoH2Sa5rFMaAa7XPDq5Xqo=",
+      "hash": "sha256-i8qVNVy4rC2rlMnR09R9D3wbFiS3Ykxjs6m4IC21feg=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "jU\/41rKl"
+  "version": "fQUEiOGx"
 };
