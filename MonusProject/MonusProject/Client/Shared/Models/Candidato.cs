@@ -16,6 +16,7 @@ namespace MonusProject.Client.Shared.Models
         {
             Nome = _nome;
             Cognome = _cognome;
+            Skills = new List<Skill>(); 
 
         }
         

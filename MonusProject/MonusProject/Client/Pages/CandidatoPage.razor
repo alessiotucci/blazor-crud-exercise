@@ -56,12 +56,22 @@ else
         <input type="text" @bind="value1" placeholder="Cognome" required />
         <br />
 
-        <select   @bind="SkillId">
+        <select  class="form-select-sm" @bind=SkillId>
+
+
+            @if (skills == null)
+            {
+                <p>Loading...</p>
+            }
+            else
+            {
+                
+            
             @foreach (var skill in skills)
             {
                 <option value="@skill.SkillId"> @skill.SkillName</option>
             }
-
+            }
         </select>
 
         <br /> 
@@ -69,6 +79,8 @@ else
 
     </form>
 </div>
+
+
 
 <div class="card" hidden="@hidecard">
     <h3> aggiornamento</h3>
@@ -114,12 +126,38 @@ else
             .card input[type="datetime"]:focus {
                 border-color: #007bff;
             }
+    .select {
+        width: 100%;
+        height: 35px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding: 5px;
+        font-size: 16px;
+        background-color: #f8f9fa;
+        color: #495057;
+    }
+
+    .select:focus {
+        border-color: lightgreen;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+    }
+
+    .select option {
+        padding: 10px;
+    }
+
+        .select option:checked {
+            background: green;
+            color: white;
+        }
 </style>
 
 @code {
     public Candidato[]? candy;
-    public Skill[]? skills;
+    public Skill[] skills;
 
+    public Skill oneSkill = new Skill();
 
     public string value;
     public string value1;
@@ -165,15 +203,17 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        candy = await Http.GetFromJsonAsync<Candidato[]>("api/Candidato");
-        skills = await Http.GetFromJsonAsync<Skill[]>("api/Skill");
+        candy = await Http.GetFromJsonAsync<Candidato?[]>("api/Candidato");
+        skills = await Http.GetFromJsonAsync<Skill?[]>("api/Skill");
     }
 
     public  async Task Add()
     {
+       // oneSkill = await Http.GetFromJsonAsync<Skill>($"api/Skill/{SkillId}");
         IlCandidato.Nome = value;
         IlCandidato.Cognome = value1;
-         await AddCandidato(IlCandidato);
+        //IlCandidato.Skills.Add(oneSkill);
+        await AddCandidato(IlCandidato);
         //candy = await Http.GetFromJsonAsync<Candidato[]>("api/Candidato");
 
         

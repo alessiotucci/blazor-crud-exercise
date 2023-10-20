@@ -111,7 +111,12 @@ namespace MonusProject.Server.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("SedeId")
+                        .HasColumnType("int");
+
                     b.HasKey("DipendenteId");
+
+                    b.HasIndex("SedeId");
 
                     b.ToTable("Dipendenti");
                 });
@@ -182,6 +187,20 @@ namespace MonusProject.Server.Migrations
                         .HasForeignKey("SkillsSkillId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("MonusProject.Client.Shared.Models.Dipendente", b =>
+                {
+                    b.HasOne("MonusProject.Client.Shared.Models.Sede", "Sede")
+                        .WithMany("Dipendents")
+                        .HasForeignKey("SedeId");
+
+                    b.Navigation("Sede");
+                });
+
+            modelBuilder.Entity("MonusProject.Client.Shared.Models.Sede", b =>
+                {
+                    b.Navigation("Dipendents");
                 });
 #pragma warning restore 612, 618
         }

@@ -11,7 +11,13 @@ namespace MonusProject.Client.Shared.Models
 
         public string Indirizzo { get; set;}
 
-        public Sede() { }
+        public ICollection<Dipendente>? Dipendents { get; set; }
+
+
+        public Sede()
+        {
+         Dipendents = new List<Dipendente>();
+        }
 
     }
 }

@@ -7,9 +7,17 @@ namespace MonusProject.Client.Shared.Models
     {
         [Key]
         public int DipendenteId { get; set; }
-        public ICollection<Skill> Skills { get; set; }
+        public ICollection<Skill>? Skills { get; set; }
 
+        // Aggiunta della proprietà nullable SedeId
+        public int? SedeId { get; set; }
 
-        public Dipendente() { }
+        // Aggiunta della proprietà di navigazione per Sede
+        public Sede? Sede { get; set; }
+
+        public Dipendente()
+        {
+            Skills = new List<Skill>();
+        }
     }
 }

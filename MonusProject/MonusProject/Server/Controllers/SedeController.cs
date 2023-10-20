@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 using MonusProject.Client.Shared;
 using MonusProject.Client.Shared.Models;
+using Microsoft.IdentityModel.Tokens;
 
 namespace MonusProject.Server.Controllers
 {
@@ -29,7 +30,7 @@ namespace MonusProject.Server.Controllers
         public async Task<ActionResult<IEnumerable<Sede>>> GetSedi()
         {
             var sedi = await _context.Sedi.ToListAsync();
-            if (sedi != null)
+            if (!sedi.IsNullOrEmpty())
                 return Ok(sedi);
             else
                 return NotFound();
@@ -67,9 +68,10 @@ namespace MonusProject.Server.Controllers
         public async Task<IActionResult> AddSede(Sede nuovaSede)
         {
             // Add the new Candidato to the context and save changes to the database
-            _context.Sedi.AddAsync(nuovaSede);
+            _context.Sedi.Add(nuovaSede);
             await _context.SaveChangesAsync();
-            return Ok(nuovaSede);
+            //return Ok(nuovaSede);
+            return CreatedAtAction(nameof(GetSede), new { id = nuovaSede.SedeId }, nuovaSede);
         }
         //PUT: api/Sede
         [HttpPut("{id}")]
@@ -83,9 +85,11 @@ namespace MonusProject.Server.Controllers
                 return NotFound(); // Sede not found
             }
 
-            // Update the sede properties with the new data
+            //Update the sede properties with the new data
             existingSede.SedeName = updatedSede.SedeName;
             existingSede.Indirizzo = updatedSede.Indirizzo;
+            
+           // _context.Entry(existingSede).CurrentValues.SetValues(updatedSede);
 
             // Save the changes to the database
             _context.Sedi.Update(existingSede);

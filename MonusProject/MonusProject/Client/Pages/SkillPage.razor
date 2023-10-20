@@ -22,6 +22,8 @@ else
         <thead>
             <tr>
                 <th>Skill Name </th>
+                <th>candidati</th>
+                <th>dipendeti </th>
             </tr>
         </thead>
         <tbody>
@@ -29,6 +31,22 @@ else
             {
                 <tr>
                     <td>@cand.SkillName</td>
+                    @if (cand.CandidatiSkillati != null && cand.CandidatiSkillati.Any())
+                    {
+                      
+                            @foreach (var candidato in cand.CandidatiSkillati)
+                            {
+                                <td>@candidato.Nome</td>
+                            }
+                        
+                    }
+
+                        @if (cand.DipendentiSkillati.FirstOrDefault() != null)
+                        {
+                        <td>
+                            @cand.DipendentiSkillati.FirstOrDefault().Cognome;
+                        </td>
+                        }
                     <td>
                         <button class="btn-danger" @onclick="() => Delete(cand.SkillId)">delete </button>
 
@@ -89,10 +107,10 @@ else
 </style>
 
 @code {
-    public Skill[] skills;
-    public string valSkill;
+    public Skill[]? skills;
+    public string? valSkill;
 
-    public string valAggiornato;
+    public string? valAggiornato;
 
     public Skill UpdatedSkill = new Skill();
     public Skill NuovaSkill = new Skill();
@@ -109,6 +127,8 @@ else
     public async Task Add()
     {
         NuovaSkill.SkillName = valSkill;
+        NuovaSkill.CandidatiSkillati = null;
+        NuovaSkill.CandidatiSkillati = null;
         await AddSkill(NuovaSkill);
     }
 
@@ -118,6 +138,11 @@ else
         if (response.IsSuccessStatusCode)
         {
             HideLabel = false;
+            Console.WriteLine("success");
+        }
+        else
+        {
+            Console.WriteLine("failed");
         }
 
     }
@@ -145,7 +170,7 @@ else
 
     }
 
-  
+
     public async Task Edit(int id)
     {
         UpdatedSkill.SkillName = valAggiornato;
@@ -153,21 +178,21 @@ else
         var response = await Http.PutAsJsonAsync($"api/Skill/{id}", UpdatedSkill);
         if (response.IsSuccessStatusCode)
             skills = await Http.GetFromJsonAsync<Skill[]>("api/Skill");
+        //else
+       // skills = await Http.GetFromJsonAsync<Skill[]>("api/Skill");
 
 
     }
-    public async Task DontDelete()
+    public   async Task DontDelete()
     {
         HideLabel = true;
         Confirmation = 2;
-        return;
     }
 
-    public async Task YesPlease()
+    public  async Task YesPlease()
     {
         Confirmation = 1;
         HideLabel = true;
-
-        return;
+        
     }
 }

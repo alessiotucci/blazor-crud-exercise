@@ -9,8 +9,12 @@ namespace MonusProject.Client.Shared.Models
         public int SkillId { get; set; }
 
         public string SkillName { get; set; }
-        public ICollection<Candidato> CandidatiSkillati { get; set; }
+        public ICollection<Candidato>? CandidatiSkillati { get; set; }
         public ICollection<Dipendente> DipendentiSkillati { get; set; }
-        public Skill() { }
+        public Skill()
+        {
+            CandidatiSkillati = new List<Candidato>();
+            DipendentiSkillati = new List<Dipendente>();
+        }
     }
 }
