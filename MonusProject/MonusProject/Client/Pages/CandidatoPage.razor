@@ -55,24 +55,27 @@ else
         <br />
         <input type="text" @bind="cognomeValues" placeholder="Cognome" required />
         <br />
-
-        <select class="form-select-lg">
-
-
-            @if (skills == null)
+        <label>select the skills </label>
+        @if (skills == null)
             {
                 <p>Loading...</p>
             }
             else
             {
 
-
+                <div class="cardy">
                 @foreach (var skill in skills)
                 {
-                    <option value="@skill.SkillId"> @skill.SkillName</option>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox"  id="@skill.SkillId">
+                        <label class="form-check-label" for="@skill.SkillId">
+                            @skill.SkillName
+                        </label>
+                    </div>
                 }
+                </div>
             }
-        </select>
+        
 
         <br />
         <button class="btn-primary" @onclick="Add">  submit </button>
@@ -97,8 +100,30 @@ else
 </div>
 
 <style>
+    .cardy {
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        padding: 1.25rem;
+        margin-bottom: 1rem;
+        background-color: #f8f9fa;
+    }
+
+    .form-check {
+        margin-bottom: 0.5rem;
+    }
+
+    .form-check-input {
+        margin-right: 0.5rem;
+    }
+
+    .form-check-label {
+        font-weight: 500;
+    }
+
 
     .card {
+        width: 150%; /* This will make the card stretch to the full width of its container */
+        box-sizing: border-box;
         border: 1px solid #ccc;
         border-radius: 10px;
         padding: 20px;

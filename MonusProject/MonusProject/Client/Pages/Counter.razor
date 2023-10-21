@@ -2,17 +2,53 @@
 
 <PageTitle>Counter</PageTitle>
 
-<h1>Counter</h1>
+<h1>tester</h1>
 
-<p role="status">Current count: @currentCount</p>
 
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+<h3>Select your hot dog sauce</h3>
+
+<div class="form-group">
+    @foreach (var sauce in sauces)
+    {
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" @bind="sauce.Selected" id="@sauce.Name">
+            <label class="form-check-label" for="@sauce.Name">
+                @sauce.Name
+            </label>
+        </div>
+    }
+</div>
+
+<button class="btn btn-primary" @onclick="Submit">Submit</button>
+
+@if (selectedSauces != null)
+{
+    <h5>You selected:</h5>
+    @foreach (var sauce in selectedSauces)
+    {
+        <p>@sauce</p>
+    }
+}
 
 @code {
-    private int currentCount = 0;
-
-    private void IncrementCount()
+    private List<Sauce> sauces = new List<Sauce>
     {
-        currentCount++;
+        new Sauce { Name = "No Sauce" },
+        new Sauce { Name = "Ketchup" },
+        new Sauce { Name = "Mayo and Mustard" }
+    };
+
+    private List<string> selectedSauces;
+
+    private void Submit()
+    {
+        selectedSauces = sauces.Where(s => s.Selected).Select(s => s.Name).ToList();
+    }
+
+    public class Sauce
+    {
+        public string Name { get; set; }
+        public bool Selected { get; set; }
     }
 }

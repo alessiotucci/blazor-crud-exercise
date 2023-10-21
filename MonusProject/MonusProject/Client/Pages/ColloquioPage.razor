@@ -210,7 +210,7 @@ else
     public Colloquio UpdatedColloquio = new Colloquio();
 
 
-    public async Task PassId(int id)
+    public void PassId(int id)
     {
         bogus_id = id;
         hidecard = false;
@@ -251,14 +251,14 @@ else
 
     }
 
-    public async Task DontDelete()
+    public  void DontDelete()
     {
         HideLabel = true;
         Confirmation = 2;
         return;
     }
 
-    public async Task YesPlease()
+    public  void YesPlease()
     {
         Confirmation = 1;
         HideLabel = true;
