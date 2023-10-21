@@ -24,6 +24,8 @@ else
             <tr>
                 <th>Nome Sede </th>
                 <th>Indirizzo </th>
+                <th>pulsante</th>
+                <th>pulsante</th>
                 
             </tr>
         </thead>
@@ -59,9 +61,9 @@ else
 <div class="card" hidden="@flag_da_provare" >
     <h3>Aggiorna La Sede</h3>
     <form>
-        <input type="text" placeholder="Aggiorna il nome" @bind="upNomeSede" />
+        <input type="text" placeholder="nuovo nome" @bind="upNomeSede" />
         <br />
-        <input type="text" placeholder="aggiorna Indirizzo della Sede" @bind="upSedeIndiriz" />
+        <input type="text" placeholder="nuovo indirizzo" @bind="upSedeIndiriz" />
         <br />
 
         <button class="btn-outline-dark" @onclick="Edit">  aggiorna</button>

@@ -36,7 +36,7 @@ namespace MonusProject.Server.Controllers
 
         // GET: api/Sede/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Candidato>> GetSede(int id)
+        public async Task<ActionResult<Candidato>> GetCandidato(int id)
         {
             var foundCandido = await _context.Candidati.FindAsync(id);
 
@@ -57,7 +57,7 @@ namespace MonusProject.Server.Controllers
             await _context.SaveChangesAsync();
             return Ok(nuovoCandidato);
         }
-        
+
 
         // DELETE: api/Candidato/5
         [HttpDelete("{id}")]

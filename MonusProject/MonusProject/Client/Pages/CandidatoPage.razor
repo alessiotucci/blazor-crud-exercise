@@ -14,7 +14,7 @@
 @if (candy == null)
 {
     <p><em>Loading...</em></p>
-    
+
 }
 else
 {
@@ -25,7 +25,7 @@ else
                 <th>Cognome </th>
                 <th> Skill</th>
                 <th> button </th>
-      
+
             </tr>
         </thead>
         <tbody>
@@ -36,7 +36,7 @@ else
                     <td>@cand.Cognome</td>
                     <td> @cand.Skills</td>
                     <td>
-                    <button class="btn-danger" @onclick="() => Delete(cand.CandidatoId)">delete </button>
+                        <button class="btn-danger" @onclick="() => Delete(cand.CandidatoId)">delete </button>
                     </td>
                     <td>
                         <button class="btn-dark" @onclick="() => PassId(cand.CandidatoId)"> edit this </button>
@@ -44,19 +44,19 @@ else
                     </td>
 
                 </tr>
-                
+
             }
         </tbody>
     </table>
 }
 <div class="card">
     <form>
-        <input type="text" @bind="value"  placeholder="Nome" required />
-       <br />
+        <input type="text" @bind="value" placeholder="Nome" required />
+        <br />
         <input type="text" @bind="value1" placeholder="Cognome" required />
         <br />
 
-        <select  class="form-select-sm" @bind=SkillId>
+        <select class="form-select-sm" @bind=SkillId>
 
 
             @if (skills == null)
@@ -65,16 +65,16 @@ else
             }
             else
             {
-                
-            
-            @foreach (var skill in skills)
-            {
-                <option value="@skill.SkillId"> @skill.SkillName</option>
-            }
+
+
+                @foreach (var skill in skills)
+                {
+                    <option value="@skill.SkillId"> @skill.SkillName</option>
+                }
             }
         </select>
 
-        <br /> 
+        <br />
         <button class="btn-primary" @onclick="Add">  submit </button>
 
     </form>
@@ -126,6 +126,7 @@ else
             .card input[type="datetime"]:focus {
                 border-color: #007bff;
             }
+
     .select {
         width: 100%;
         height: 35px;
@@ -137,20 +138,20 @@ else
         color: #495057;
     }
 
-    .select:focus {
-        border-color: lightgreen;
-        outline: 0;
-        box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
-    }
-
-    .select option {
-        padding: 10px;
-    }
-
-        .select option:checked {
-            background: green;
-            color: white;
+        .select:focus {
+            border-color: lightgreen;
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
         }
+
+        .select option {
+            padding: 10px;
+        }
+
+            .select option:checked {
+                background: green;
+                color: white;
+            }
 </style>
 
 @code {
@@ -172,7 +173,7 @@ else
     // poppup nice
     public bool HideLabel = true;
     public int Confirmation = 0;
-    // edit button is nice 
+    // edit button is nice
     public bool hidecard = true;
     public int bogus_id = 0;
 
@@ -207,21 +208,21 @@ else
         skills = await Http.GetFromJsonAsync<Skill?[]>("api/Skill");
     }
 
-    public  async Task Add()
+    public async Task Add()
     {
-       // oneSkill = await Http.GetFromJsonAsync<Skill>($"api/Skill/{SkillId}");
+         oneSkill = await Http.GetFromJsonAsync<Skill>($"api/Skill/{SkillId}");
         IlCandidato.Nome = value;
         IlCandidato.Cognome = value1;
-        //IlCandidato.Skills.Add(oneSkill);
+        IlCandidato.Skills.Add(oneSkill);
         await AddCandidato(IlCandidato);
         //candy = await Http.GetFromJsonAsync<Candidato[]>("api/Candidato");
 
-        
-        
+
+
     }
-    public  async Task AddCandidato(Candidato newCandidato)
+    public async Task AddCandidato(Candidato newCandidato)
     {
-            var response = await Http.PostAsJsonAsync("api/Candidato", newCandidato);
+        var response = await Http.PostAsJsonAsync("api/Candidato", newCandidato);
 
     }
     public async Task Delete(int id)
@@ -239,8 +240,8 @@ else
         {
             candy = null;
             // Handle the case where deletion was not successful
-                // You can show an error message or take appropriate action
-         }
+            // You can show an error message or take appropriate action
+        }
     }
     public void DontDelete()
     {
@@ -249,7 +250,7 @@ else
         return;
     }
 
-    public  void YesPlease()
+    public void YesPlease()
     {
         Confirmation = 1;
         HideLabel = true;
@@ -257,10 +258,7 @@ else
         return;
     }
 
-     
-    
+
+
 
 }
-
-
-

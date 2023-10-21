@@ -32,10 +32,8 @@ else
         <tbody>
             @if (dipendenti == null)
             {
-            <td>empty</td>
-            <td>empy</td>
-            <td>emty</td>
-            <td>mpty</td>
+            <p>empty</p>
+      
             }
             @foreach (var cand in dipendenti)
             {
@@ -91,13 +89,11 @@ else
                 <p>Loading...</p>
             }
             else
-            {
-                
-            
-            @foreach (var sede in sedi)
-            {
+            {   
+                @foreach (var sede in sedi)
+                {
                 <option value="@sede.SedeId"> @sede.SedeName @sede.Indirizzo</option>
-            }
+                }
             }
         </select>
         <button class="btn-primary" @onclick="Add">  submit </button>
@@ -113,7 +109,20 @@ else
         <br />
         <input type="text" placeholder="aggiorna il cognome" @bind="updateCognome" />
         <br />
-        <input type="text" placeholder="aggiorna la skill" @bind="updateSkill" />
+        <label> trasferito a nuova  Sede </label>
+        <select class="select" @bind="UpdateSedeId">
+            @if (sedi == null)
+            {
+                <p>Loading...</p>
+            }
+            else
+            {
+                @foreach (var sede in sedi)
+                {
+                    <option value="@sede.SedeId"> @sede.SedeName @sede.Indirizzo</option>
+                }
+            }
+        </select>
         <br />
         <button class="btn-primaryactive" @onclick="Edit">  Aggiorna </button>
     </form>
@@ -156,9 +165,13 @@ else
     public Dipendente[]? dipendenti;
     public Skill[]? skills;
     public Sede[]? sedi;
+
     public int SedeId;
+    public int UpdateSedeId;
     public Sede? GetSede = new Sede();
+
     public int SkillId;
+    public Skill Skilla = new Skill();
 
 
     public string valNome;
@@ -188,6 +201,7 @@ else
     {
         UpdateDipendente.Nome = updateNome;
         UpdateDipendente.Cognome = updateCognome;
+        UpdateDipendente.SedeId = UpdateSedeId;
         var response = await Http.PutAsJsonAsync($"api/Dipendente/{bogus_id}", UpdateDipendente);
         if (response.IsSuccessStatusCode)
             dipendenti = await Http.GetFromJsonAsync<Dipendente[]>("api/Dipendente");
@@ -208,9 +222,18 @@ else
         NuovoDipendente.Nome = valNome;
         NuovoDipendente.Cognome = valCognome;
         NuovoDipendente.SedeId = SedeId;
-        GetSede = await Http.GetFromJsonAsync<Sede>($"api/Sede/{SedeId}");
-        NuovoDipendente.Sede = GetSede;
-        await AddDipendente(NuovoDipendente);
+        //NuovoDipendente.Sede = await Http.GetFromJsonAsync<Sede>($"api/Sede/{SedeId}");
+
+        //Skilla = await Http.GetFromJsonAsync<Skill>($"api/Skill/{SkillId}");
+        //NuovoDipendente.Skills.Add(Skilla);
+        try
+        {
+            await AddDipendente(NuovoDipendente);
+        }
+        catch (Exception ex)
+        {
+            return ;
+        }
     }
 
     public async Task AddDipendente(Dipendente nuovodipendente)

@@ -64,14 +64,15 @@ namespace MonusProject.Server.Controllers
 
             return NoContent();
         }
-        // POST: api/Dipendente
+
+        //POST: api/Dipendente
         [HttpPost]
         public async Task<IActionResult> AddDipendente(Dipendente nuovoDipendente)
         {
-            // Add the new Candidato to the context and save changes to the database
-            _context.Dipendenti.AddAsync(nuovoDipendente);
+            _context.Dipendenti.Add(nuovoDipendente);
             await _context.SaveChangesAsync();
-            return Ok(nuovoDipendente);
+
+            return CreatedAtAction(nameof(GetDipendente), new { id = nuovoDipendente.DipendenteId }, nuovoDipendente);
         }
         //PUT: api/Dipendente
         [HttpPut("{id}")]
@@ -85,9 +86,14 @@ namespace MonusProject.Server.Controllers
                 return NotFound(); // Dipendente not found
             }
 
+            /* Update all properties of the Dipendente
+            _context.Entry(existingDipenden).CurrentValues.SetValues(updatedDipendente); 
+            */
+
             // Update the Dipendente properties with the new data
             existingDipenden.Nome = updatedDipendente.Nome;
             existingDipenden.Cognome = updatedDipendente.Cognome;
+            existingDipenden.SedeId = updatedDipendente.SedeId; // Add this line
 
             // Save the changes to the database
             _context.Dipendenti.Update(existingDipenden);
@@ -95,6 +101,7 @@ namespace MonusProject.Server.Controllers
 
             return Ok(existingDipenden);
         }
+
 
     }
 }

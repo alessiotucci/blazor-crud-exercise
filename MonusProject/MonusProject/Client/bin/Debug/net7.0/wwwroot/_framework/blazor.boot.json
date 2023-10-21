@@ -231,15 +231,15 @@
       "mscorlib.dll": "sha256-8OmdVHzoN7xteY5ehp0L8R17I9QxFkH2lUVHFuslE0s=",
       "netstandard.dll": "sha256-urq+e2ZQXxmOWMRxTR92529HnUVu6+kyVnfF6SoLad8=",
       "System.Private.CoreLib.dll": "sha256-ixnF\/wVKLHZM1N0lfJufpZ41EC2LvvyiSqdW43h3Xew=",
-      "MonusProject.Shared.dll": "sha256-CesATv1bPcLSADFMNNY3hFaPICV3QVYtlXQj5ZOKKTc=",
-      "MonusProject.Client.dll": "sha256-JfMZYMQpVF589IEcSvtW7jAsk\/\/xjHn+HEfR8D4pg1M="
+      "MonusProject.Shared.dll": "sha256-i0fd3CznJcDEaGraZCI6F0FRp3ssXivrq4g7TCIv5UQ=",
+      "MonusProject.Client.dll": "sha256-zWbrpKDQdG9Y\/q54F4QryoLEgosfFh6JXjmAwcMHOcQ="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "MonusProject.Shared.pdb": "sha256-U\/ql1fRu4NbTOO6tQNo\/gkfuVQdUAMQMKrx87Z7EwEk=",
-      "MonusProject.Client.pdb": "sha256-wD+KOQ4YpeAEpmBsPJgtIWLQ2bQHvBrQekwnIpq2Qfg="
+      "MonusProject.Shared.pdb": "sha256-FjWdfzqAMNkE3aAvIzfJBmUz99xsmVSwcD\/sAb77Adc=",
+      "MonusProject.Client.pdb": "sha256-\/RKPFc1q61WtsRx6VbyjWrVSeQ007pcOOkTLt7BUF7U="
     },
     "runtime": {
       "dotnet.7.0.12.3nso66yylp.js": "sha256-cPJgWy8SjMaYFeimGkYy23ls+rDZVmoC\/eMoHpqRc+4=",
