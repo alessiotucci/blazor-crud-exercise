@@ -1013,11 +1013,11 @@
       "url": "_framework\/MonusProject.Shared.pdb"
     },
     {
-      "hash": "sha256-zWbrpKDQdG9Y\/q54F4QryoLEgosfFh6JXjmAwcMHOcQ=",
+      "hash": "sha256-SFAkYAaLxBxJKlI\/nuoDQNfqYKXeblzJnexLZzHCjq8=",
       "url": "_framework\/MonusProject.Client.dll"
     },
     {
-      "hash": "sha256-\/RKPFc1q61WtsRx6VbyjWrVSeQ007pcOOkTLt7BUF7U=",
+      "hash": "sha256-DWzszCj0u4wNI+Ly+4LJsJ1bdOLRJsgjfQdEtPZb7pA=",
       "url": "_framework\/MonusProject.Client.pdb"
     },
     {
@@ -1025,9 +1025,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-a9cL28IP1RKGMXYK3LZQ7WSSP73YlBccVyO4Km2oO+w=",
+      "hash": "sha256-RHlpGs1USxiT\/cXP5zA0vA0OtBFNpbOVpJ7Rpx1r\/xo=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "UFs++zdw"
+  "version": "tdkaWMNO"
 };

@@ -51,12 +51,12 @@ else
 }
 <div class="card">
     <form>
-        <input type="text" @bind="value" placeholder="Nome" required />
+        <input type="text" @bind="nomeValues" placeholder="Nome" required />
         <br />
-        <input type="text" @bind="value1" placeholder="Cognome" required />
+        <input type="text" @bind="cognomeValues" placeholder="Cognome" required />
         <br />
 
-        <select class="form-select-sm" @bind=SkillId>
+        <select class="form-select-lg">
 
 
             @if (skills == null)
@@ -160,8 +160,8 @@ else
 
     public Skill oneSkill = new Skill();
 
-    public string value;
-    public string value1;
+    public string nomeValues;
+    public string cognomeValues;
 
     public int SkillId;
 
@@ -183,7 +183,7 @@ else
     public string UpSkillCandid;
 
 
-    public async Task PassId(int id)
+    public  void PassId(int id)
     {
         bogus_id = id;
         hidecard = false;
@@ -204,27 +204,39 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        candy = await Http.GetFromJsonAsync<Candidato?[]>("api/Candidato");
-        skills = await Http.GetFromJsonAsync<Skill?[]>("api/Skill");
+        candy = await Http.GetFromJsonAsync<Candidato[]>("api/Candidato");
+        skills = await Http.GetFromJsonAsync<Skill[]>("api/Skill");
     }
 
     public async Task Add()
     {
-         oneSkill = await Http.GetFromJsonAsync<Skill>($"api/Skill/{SkillId}");
-        IlCandidato.Nome = value;
-        IlCandidato.Cognome = value1;
-        IlCandidato.Skills.Add(oneSkill);
-        await AddCandidato(IlCandidato);
-        //candy = await Http.GetFromJsonAsync<Candidato[]>("api/Candidato");
+        IlCandidato.Nome = nomeValues;
+        IlCandidato.Cognome = cognomeValues;
+        var success = await AddCandidato(IlCandidato);
+        if (success == true)
+        {
+            candy = await Http.GetFromJsonAsync<Candidato[]>("api/Candidato");
 
-
-
+        }
+        else
+            return;
     }
-    public async Task AddCandidato(Candidato newCandidato)
+
+    public async Task<bool> AddCandidato(Candidato newCandidato)
     {
         var response = await Http.PostAsJsonAsync("api/Candidato", newCandidato);
 
+        if (response.IsSuccessStatusCode)
+        {
+            // The Candidato was successfully created.
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
+
     public async Task Delete(int id)
     {
         HideLabel = false;

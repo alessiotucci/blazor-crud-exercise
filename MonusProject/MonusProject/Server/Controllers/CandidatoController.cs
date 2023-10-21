@@ -53,9 +53,10 @@ namespace MonusProject.Server.Controllers
         public async Task<IActionResult> AddCandidato(Candidato nuovoCandidato)
         {
             // Add the new Candidato to the context and save changes to the database
-            await _context.Candidati.AddAsync(nuovoCandidato);
+             _context.Candidati.Add(nuovoCandidato);
             await _context.SaveChangesAsync();
-            return Ok(nuovoCandidato);
+
+            return CreatedAtAction(nameof(GetCandidato), new {id = nuovoCandidato.CandidatoId }, nuovoCandidato);
         }
 
 

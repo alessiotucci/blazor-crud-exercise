@@ -7,7 +7,7 @@ namespace MonusProject.Client.Shared.Models
     {
         [Key] 
         public int CandidatoId { get; set; }
-        public ICollection<Skill> Skills { get; set; }
+        public ICollection<Skill>? Skills { get; set; }
 
         public Candidato() : base() { }
 
