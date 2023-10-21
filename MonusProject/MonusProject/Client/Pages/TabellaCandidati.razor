@@ -15,10 +15,10 @@ else
 <table class="table">
     <thead>
         <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Cognome</th>
+            <th scope="col">Skill</th>
+            <th scope="col">Delete</th>
             <th scope="col">Edit</th>
         </tr>
     </thead>
@@ -28,7 +28,7 @@ else
         <tr>
             <td>@candidato.Nome</td>
             <td>@candidato.Cognome</td>
-            <td>@candidato.SkillName</td>
+            <td>@*@candidato.SkillName*@</td>
             <td><button type="button" @onclick="() => Delete(candidato.CandidatoId)" class="btn btn-danger">Delete</button></td>
             <td><button type="button" @onclick="() => EditButton(candidato)" class="btn btn-danger">Edit</button></td>
         </tr>
@@ -73,7 +73,7 @@ else
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">SkillName</label>
-                    <input type="text" class="form-control" required @bind=Modificato.SkillName>
+                    <input type="text" class="form-control" required //@bind=Modificato.SkillName>
                 </div>
                 <button type="button" @onclick="UpdateCandidato" class="btn btn-primary">Submit</button>
                 <button type="button" @*@onclick=""*@ class="btn btn-danger">Annulla</button>
@@ -127,7 +127,7 @@ else
     {
         Aggiunto.Nome = NomeValore;
         Aggiunto.Cognome = CognomeValore;
-        Aggiunto.SkillName = SkillName;
+        //Aggiunto.SkillName = SkillName;
 
         await AddCandidato(Aggiunto);
         Candidati = await Http.GetFromJsonAsync<Candidato[]>("api/Candidato");
@@ -142,7 +142,7 @@ else
     {
         Modificato.Nome = NomeValore;
         Modificato.Cognome = CognomeValore;
-        Modificato.SkillName = SkillName;
+        //Modificato.SkillName = SkillName;
 
         //await UpdateCandidato(Modificato);
         var response = await Http.PutAsJsonAsync($"api/Candidato/", Modificato);

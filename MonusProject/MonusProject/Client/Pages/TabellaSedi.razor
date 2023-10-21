@@ -15,10 +15,10 @@ else
     <table class="table">
         <thead>
             <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
+                <th scope="col">Nome Sede</th>
+                <th scope="col">Via</th>
+                <th scope="col">Delete</th>
+                <th scope="col">Edit</th>
             </tr>
         </thead>
         <tbody>
@@ -26,16 +26,18 @@ else
             {
                 <tr>
                     <td>@sede.SedeName</td>
-                    <td>@sede.Indirizzo</td>
+                    <td>@sede.Indirizzo</td>    
                     <td><button type="button" @onclick="() => Delete(sede.SedeId)" class="btn btn-danger">Delete</button></td>
+                    <td><button type="button" @onclick="() => EditButton(sede)" class="btn btn-danger">Edit</button></td>
                 </tr>
             }
         </tbody>
     </table>
 }
 
-<div class="card" style="width: 18rem;">
+<div class="divAggiunta card mt-5" style="width: 18rem;">
     <div class="card-body">
+        <h2 class="text-center">Aggiungi</h2>
         <form>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Sede</label>
@@ -45,23 +47,42 @@ else
                 <label for="exampleInputPassword1" class="form-label">Indirizzo</label>
                 <input type="text" class="form-control" @bind=Indirizzo>
             </div>
-            <button type="submit" @onclick="Test" class="btn btn-primary">Submit</button>
+            <button type="button" @onclick="Aggiungi" class="btn btn-primary">Submit</button>
         </form>
     </div>
 </div>
+@if (isEdit)
+{
+    <div class="divModifica card mt-5" style="width: 18rem;">
+        <div class="card-body">
+            <h2 class="text-center">Modifica</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Sede</label>
+                    <input type="text" class="form-control" required @bind=Modificato.SedeName>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Indirizzo</label>
+                    <input type="text" class="form-control" required @bind=Modificato.Indirizzo>
+                </div>
+                <button type="button" @onclick="UpdateSede" class="btn btn-primary">Submit</button>
+                <button type="button" @*@onclick="" *@ class="btn btn-danger">Annulla</button>
+            </form>
+        </div>
+    </div>
+} 
 
 @code {
     public Sede[]? Sedi;
+    Sede Aggiunto = new Sede();
+    Sede Modificato = new Sede();
+    bool isEdit = false;
+    
     public string SedeName;
     public string Indirizzo;
     protected override async Task OnInitializedAsync()
     {
         Sedi = await Http.GetFromJsonAsync<Sede[]>("api/Sede");
-    }
-    public void Test()
-    {
-
-        return;
     }
 
     private async Task GetAllSedi()
@@ -82,5 +103,48 @@ else
         {
             Sedi = null;
         }
+    }
+
+    public async Task GetbyId(int id)
+    {
+        await Http.GetFromJsonAsync<Sede>($"api/Sede/{id}");
+    }
+
+    public async Task Aggiungi()
+    {
+        Aggiunto.SedeName = SedeName;
+        Aggiunto.Indirizzo = Indirizzo;
+
+        await AddSede(Aggiunto);
+        Sedi = await Http.GetFromJsonAsync<Sede[]>("api/Sede");
+    }
+
+    public async Task AddSede(Sede nuovaSede)
+    {
+        await Http.PostAsJsonAsync("api/Sede", nuovaSede);
+    }
+
+    public async Task Put()
+    {
+        Modificato.SedeName = SedeName;
+        Modificato.Indirizzo = Indirizzo;
+
+        //await UpdateSede(Modificato);
+        var response = await Http.PutAsJsonAsync($"api/Sede/", Modificato);
+        Sedi = await Http.GetFromJsonAsync<Sede[]>("api/Sede");
+    }
+
+    public async Task UpdateSede()
+    {
+        var response = await Http.PostAsJsonAsync($"api/Sede/UpdateSede/{Modificato.SedeId}", Modificato);
+        Sedi = await Http.GetFromJsonAsync<Sede[]>("api/Sede");
+    }
+
+    protected virtual void EditButton(Sede sede)
+    {
+        isEdit = true;
+        Modificato = sede;
+
+        //Click += new EventHandler();
     }
 }

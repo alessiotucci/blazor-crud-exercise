@@ -43,7 +43,7 @@ namespace MonusProject.Server.Controllers
         public async Task<IActionResult> AddDipendente(Dipendente nuovoDipendente)
         {
             //Add the new dipendente to the context and save changes to the database
-            _context.Dipendenti.AddAsync(nuovoDipendente);
+            await _context.Dipendenti.AddAsync(nuovoDipendente);
             await _context.SaveChangesAsync();
             return Ok(nuovoDipendente);
         }
@@ -65,7 +65,24 @@ namespace MonusProject.Server.Controllers
             return NoContent();
         }
 
+        [HttpPost]
+        [Route("UpdateDipendente/{id:int}")]
 
+        public async Task<IActionResult> UpdateDipendente(int id, Dipendente dipendenteAggiornato)
+        {
+            var dipendenteEsistente = await _context.Dipendenti.FindAsync(id);
+            if (dipendenteEsistente == null)
+            {
+                return NotFound();
+            }
 
+            dipendenteEsistente.Nome = dipendenteAggiornato.Nome;
+            dipendenteEsistente.Cognome = dipendenteAggiornato.Cognome;
+            //dipendenteEsistente.SkillName = dipendenteAggiornato.SkillName;
+            //Add the new dipendente to the context and save changes to the database
+            _context.Dipendenti.Update(dipendenteEsistente);
+            await _context.SaveChangesAsync();
+            return Ok(dipendenteEsistente);
+        }
     }
 }

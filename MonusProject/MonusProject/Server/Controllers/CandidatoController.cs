@@ -45,7 +45,7 @@ namespace MonusProject.Server.Controllers
         public async Task<IActionResult> AddCandidato(Candidato nuovoCandidato)
         {
             //Add the new candidato to the context and save changes to the database
-            _context.Candidati.AddAsync(nuovoCandidato);
+            await _context.Candidati.AddAsync(nuovoCandidato);
             await _context.SaveChangesAsync();
             return Ok(nuovoCandidato);
         }
@@ -80,15 +80,12 @@ namespace MonusProject.Server.Controllers
 
             candidatoEsistente.Nome = candidatoAggiornato.Nome;
             candidatoEsistente.Cognome = candidatoAggiornato.Cognome;
-            candidatoEsistente.SkillName = candidatoAggiornato.SkillName;
+            //candidatoEsistente.SkillName = candidatoAggiornato.SkillName;
             //Add the new candidato to the context and save changes to the database
             _context.Candidati.Update(candidatoEsistente);
             await _context.SaveChangesAsync();
             return Ok(candidatoEsistente);
         }
-
-
-
 
     }
 }

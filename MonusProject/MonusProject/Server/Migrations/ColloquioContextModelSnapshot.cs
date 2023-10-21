@@ -22,6 +22,36 @@ namespace MonusProject.Server.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("CandidatoSkill", b =>
+                {
+                    b.Property<int>("CandidatoSkillatoCandidatoId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SkillCandidatoSkillId")
+                        .HasColumnType("int");
+
+                    b.HasKey("CandidatoSkillatoCandidatoId", "SkillCandidatoSkillId");
+
+                    b.HasIndex("SkillCandidatoSkillId");
+
+                    b.ToTable("CandidatoSkill");
+                });
+
+            modelBuilder.Entity("DipendenteSkill", b =>
+                {
+                    b.Property<int>("DipendenteSkillatoDipendenteId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SkillDipendenteSkillId")
+                        .HasColumnType("int");
+
+                    b.HasKey("DipendenteSkillatoDipendenteId", "SkillDipendenteSkillId");
+
+                    b.HasIndex("SkillDipendenteSkillId");
+
+                    b.ToTable("DipendenteSkill");
+                });
+
             modelBuilder.Entity("MonusProject.Client.Shared.Models.Candidato", b =>
                 {
                     b.Property<int>("CandidatoId")
@@ -35,10 +65,6 @@ namespace MonusProject.Server.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nome")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("SkillName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -85,10 +111,6 @@ namespace MonusProject.Server.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("SkillName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("DipendenteId");
 
                     b.ToTable("Dipendenti");
@@ -130,6 +152,36 @@ namespace MonusProject.Server.Migrations
                     b.HasKey("SkillId");
 
                     b.ToTable("Skills");
+                });
+
+            modelBuilder.Entity("CandidatoSkill", b =>
+                {
+                    b.HasOne("MonusProject.Client.Shared.Models.Candidato", null)
+                        .WithMany()
+                        .HasForeignKey("CandidatoSkillatoCandidatoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("MonusProject.Client.Shared.Models.Skill", null)
+                        .WithMany()
+                        .HasForeignKey("SkillCandidatoSkillId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("DipendenteSkill", b =>
+                {
+                    b.HasOne("MonusProject.Client.Shared.Models.Dipendente", null)
+                        .WithMany()
+                        .HasForeignKey("DipendenteSkillatoDipendenteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("MonusProject.Client.Shared.Models.Skill", null)
+                        .WithMany()
+                        .HasForeignKey("SkillDipendenteSkillId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

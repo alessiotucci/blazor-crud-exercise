@@ -41,7 +41,7 @@ namespace MonusProject.Server.Controllers
         public async Task<IActionResult> AddSede(Sede nuovoSede)
         {
             //Add the new sede to the context and save changes to the database
-            _context.Sedi.AddAsync(nuovoSede);
+            await _context.Sedi.AddAsync(nuovoSede);
             await _context.SaveChangesAsync();
             return Ok(nuovoSede);
         }

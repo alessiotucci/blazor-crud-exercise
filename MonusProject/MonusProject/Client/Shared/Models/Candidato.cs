@@ -8,16 +8,14 @@ namespace MonusProject.Client.Shared.Models
         [Key] 
         public int CandidatoId { get; set; }
 
-		[ForeignKey(nameof(SkillName))]
-        public string SkillName { get; set; }
-
+        public ICollection<Skill> SkillCandidato { get; set; }
         public Candidato() :base() { }
 
-        public Candidato(string _nome, string _cognome, string _skillname)
+        public Candidato(string _nome, string _cognome)
         {
             Nome = _nome;
             Cognome = _cognome;
-            SkillName = _skillname;
+            SkillCandidato = new List<Skill>();
         }
     }
 

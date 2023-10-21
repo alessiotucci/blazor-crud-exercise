@@ -9,15 +9,15 @@ namespace MonusProject.Client.Shared.Models
         
         public int SkillId { get; set; }
 
-        [ForeignKey(nameof(SkillName))]
-
         public string SkillName { get; set; }
 
-        public Skill() :base() { }
-
-        public Skill(string _skillName)
-        {
-            SkillName = _skillName;
+        public ICollection<Candidato> CandidatoSkillato { get; set; }
+        public ICollection<Dipendente> DipendenteSkillato { get; set; }
+        public Skill()
+        { 
+           CandidatoSkillato = new List<Candidato>();
+           DipendenteSkillato = new List<Dipendente>();
         }
+
     }
 }

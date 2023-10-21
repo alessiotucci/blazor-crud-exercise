@@ -7,17 +7,19 @@ namespace MonusProject.Client.Shared.Models
     {
         [Key]
         public int DipendenteId { get; set; }
-        [ForeignKey(nameof(SkillName))]
-        public string SkillName { get; set; }
 
+        public ICollection<Skill> SkillDipendente { get; set; }
 
-        public Dipendente() : base() { }
+        public Dipendente() : base() 
+        { 
+            
+        }
 
-        public Dipendente(string _nome, string _cognome, string _skillname)
+        public Dipendente(string _nome, string _cognome)
         {
             Nome = _nome;
             Cognome = _cognome;
-            SkillName = _skillname;
+            SkillDipendente = new List<Skill>();
         }
     }
 }

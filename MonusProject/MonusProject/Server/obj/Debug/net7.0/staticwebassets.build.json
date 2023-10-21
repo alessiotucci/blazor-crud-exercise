@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lMnx3aYpoiscAp9d/7JqJMH59WX2WTEAIT9WnrNjET4=",
+  "Hash": "hexgVubdiVB4EAmoQUDCLExHMkBUaZ8554tdhXj9IP0=",
   "Source": "MonusProject.Server",
   "BasePath": "_content/MonusProject.Server",
   "Mode": "Default",
@@ -11,10 +11,10 @@
       "Version": 2,
       "Source": "MonusProject.Client",
       "GetPublishAssetsTargets": "ComputeFilesToPublish;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "BuildProjectReferences=false;ResolveAssemblyReferencesFindRelatedSatellites=true;_PublishingBlazorWasmProject=true;Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishProperties": "BuildProjectReferences=false;ResolveAssemblyReferencesFindRelatedSatellites=true;_PublishingBlazorWasmProject=true",
       "AdditionalPublishPropertiesToRemove": "NoBuild;RuntimeIdentifier;WebPublishProfileFile;TargetFramework",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildProperties": "",
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     }
   ],
@@ -165,23 +165,6 @@
       "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\humanizer.core\\2.14.1\\lib\\net6.0\\Humanizer.dll"
     },
     {
-      "Identity": "C:\\Users\\User\\source\\repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\icudt.dat",
-      "SourceId": "MonusProject.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\Users\\User\\source\\repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/icudt.dat",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "native",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.5\\runtimes\\browser-wasm\\native\\icudt.dat"
-    },
-    {
       "Identity": "C:\\Users\\User\\source\\repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\icudt_CJK.dat",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
@@ -231,6 +214,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.5\\runtimes\\browser-wasm\\native\\icudt_no_CJK.dat"
+    },
+    {
+      "Identity": "C:\\Users\\User\\source\\repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\icudt.dat",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/icudt.dat",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "native",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.5\\runtimes\\browser-wasm\\native\\icudt.dat"
     },
     {
       "Identity": "C:\\Users\\User\\source\\repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
@@ -8087,23 +8087,6 @@
       "OriginalItemSpec": "C:\\Users\\User\\source\\repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\scopedcss\\bundle\\MonusProject.Client.styles.css"
     },
     {
-      "Identity": "C:\\Users\\User\\source\\repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\service-worker\\service-worker.js",
-      "SourceId": "MonusProject.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\Users\\User\\source\\repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\service-worker\\",
-      "BasePath": "/",
-      "RelativePath": "service-worker.js",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorServiceWorker",
-      "AssetTraitValue": "ServiceWorkerJs",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "wwwroot\\service-worker.js"
-    },
-    {
       "Identity": "C:\\Users\\User\\source\\repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\service-worker-assets.js.build",
       "SourceId": "MonusProject.Client",
       "SourceType": "Project",
@@ -8119,6 +8102,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net7.0\\service-worker-assets.js.build"
+    },
+    {
+      "Identity": "C:\\Users\\User\\source\\repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\service-worker\\service-worker.js",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\obj\\Debug\\net7.0\\service-worker\\",
+      "BasePath": "/",
+      "RelativePath": "service-worker.js",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorServiceWorker",
+      "AssetTraitValue": "ServiceWorkerJs",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "wwwroot\\service-worker.js"
     },
     {
       "Identity": "C:\\Users\\User\\source\\repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\wwwroot\\css\\app.css",
@@ -8170,6 +8170,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\User\\source\\repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "SourceId": "MonusProject.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/open-iconic/FONT-LICENSE",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
       "Identity": "C:\\Users\\User\\source\\repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
@@ -8272,23 +8289,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
-    },
-    {
-      "Identity": "C:\\Users\\User\\source\\repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
-      "SourceId": "MonusProject.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\Users\\User\\source\\repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "css/open-iconic/FONT-LICENSE",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
       "Identity": "C:\\Users\\User\\source\\repos\\hr-management-system\\MonusProject\\MonusProject\\Client\\wwwroot\\css\\open-iconic\\ICON-LICENSE",

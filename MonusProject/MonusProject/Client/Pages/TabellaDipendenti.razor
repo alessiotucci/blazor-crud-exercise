@@ -15,10 +15,11 @@ else
 <table class="table">
     <thead>
         <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Cognome</th>
+            <th scope="col">Skill</th>
+            <th scope="col">Delete</th>
+            <th scope="col">Edit</th>
         </tr>
     </thead>
     <tbody>
@@ -27,16 +28,18 @@ else
         <tr>
             <td>@dipendente.Nome</td>
             <td>@dipendente.Cognome</td>
-            <td>@dipendente.SkillName</td>
-                    <td><button type="button" @onclick = "()=> Delete(dipendente.DipendenteId)"class="btn btn-danger">Delete</button></td>
+            @*<td>@dipendente.SkillName</td>*@
+            <td><button type="button" @onclick = "()=> Delete(dipendente.DipendenteId)"class="btn btn-danger">Delete</button></td>
+            <td><button type="button" @onclick="() => EditButton(dipendente)" class="btn btn-danger">Edit</button></td>
         </tr>
          }
     </tbody>
 </table>
 }
 
-<div class="card" style="width: 18rem;">
+<div class="divAggiunta card mt-5" style="width: 18rem;">
     <div class="card-body">
+        <h2 class="text-center">Aggiungi</h2>
         <form>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Nome</label>
@@ -50,24 +53,47 @@ else
                 <label for="exampleInputPassword1" class="form-label">SkillName</label>
                 <input type="text" class="form-control" @bind=SkillName>
             </div>
-            <button type="submit" @onclick="Test" class="btn btn-primary">Submit</button>
+            <button type="button+" @onclick="Aggiungi" class="btn btn-primary">Submit</button>
         </form>
     </div>
 </div>
+@if (isEdit)
+{
+    <div class="divModifica card mt-5" style="width: 18rem;">
+        <div class="card-body">
+            <h2 class="text-center">Modifica</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Nome</label>
+                    <input type="text" class="form-control" required @bind=Modificato.Nome>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Cognome</label>
+                    <input type="text" class="form-control" required @bind=Modificato.Cognome>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">SkillName</label>
+                    <input type="text" class="form-control" required @*@bind=Modificato.SkillName*@>
+                </div>
+                <button type="button" @onclick="UpdateDipendente" class="btn btn-primary">Submit</button>
+                <button type="button" @*@onclick="" *@ class="btn btn-danger">Annulla</button>
+            </form>
+        </div>
+    </div>
+}
 
 @code {
     public Dipendente[]? Dipendenti;
+    Dipendente Aggiunto = new Dipendente();
+    Dipendente Modificato = new Dipendente();
+    bool isEdit = false;
+    
     public string NomeValore;
     public string CognomeValore;
     public string SkillName;
     protected override async Task OnInitializedAsync()
     {
         Dipendenti = await Http.GetFromJsonAsync<Dipendente[]>("api/Dipendente");
-    }
-    public void Test()
-    {
-
-        return;
     }
 
     private async Task GetAllDipendenti()
@@ -88,5 +114,50 @@ else
         {
             Dipendenti = null;
         }
+    }
+
+    public async Task GetbyId(int id)
+    {
+        await Http.GetFromJsonAsync<Dipendente>($"api/Dipendente/{id}");
+    }
+
+    public async Task Aggiungi()
+    {
+        Aggiunto.Nome = NomeValore;
+        Aggiunto.Cognome = CognomeValore;
+        //Aggiunto.SkillName = SkillName;
+
+        await AddDipendente(Aggiunto);
+        Dipendenti = await Http.GetFromJsonAsync<Dipendente[]>("api/Dipendente");
+    }
+
+    public async Task AddDipendente(Dipendente nuovoDipendente)
+    {
+        await Http.PostAsJsonAsync("api/Dipendente", nuovoDipendente);
+    }
+
+    public async Task Put()
+    {
+        Modificato.Nome = NomeValore;
+        Modificato.Cognome = CognomeValore;
+        //Modificato.SkillName = SkillName;
+
+        //await UpdateDipendente(Modificato);
+        var response = await Http.PutAsJsonAsync($"api/Dipendente/", Modificato);
+        Dipendenti = await Http.GetFromJsonAsync<Dipendente[]>("api/Dipendente");
+    }
+
+    public async Task UpdateDipendente()
+    {
+        var response = await Http.PostAsJsonAsync($"api/Dipendente/UpdateDipendente/{Modificato.DipendenteId}", Modificato);
+        Dipendenti = await Http.GetFromJsonAsync<Dipendente[]>("api/Dipendente");
+    }
+
+    protected virtual void EditButton(Dipendente dipendente)
+    {
+        isEdit = true;
+        Modificato = dipendente;
+
+        //Click += new EventHandler();
     }
 }

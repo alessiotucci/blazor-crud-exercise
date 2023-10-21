@@ -32,25 +32,23 @@ else
             }
         </tbody>
     </table>
-    <div class="card" style="width: 18rem;">
+    <div class="card mx-auto" style="width: 20rem;">
         <form>
-            <label for="meeting-time">Choose a time for your appointment:</label>
+            <label for="meeting-time" class="mt-4 mb-2 ms-3 me-3">Choose a time for your appointment:</label>
             <div class="card-body">
 
                 <input type="datetime-local"
+                       class="ms-5 me-5 mb-3"
                        id="meeting-time"
-                       name="meeting-time"
                 @bind="valueTime" />
                 @if (candidati == null)
                 {
                     <h2>Database Vuoto </h2>
-
-
-
                 }
                 else
-                {   
-                    <select @bind="candidatoid">
+                {
+                    <label for="Candidato" class="text-center" style="width:11rem">Candidato:</label>
+                    <select class="ms-5 me-5 mt-3 mb-3" style="width: 11rem;" @bind="candidatoid">
                         @foreach (var candidato in candidati)
                         {
                         <option value="@candidato.CandidatoId"> @candidato.Nome</option>
@@ -58,34 +56,36 @@ else
                     </select>
                 }
                 <br />
-                <label for=" Referente Tecnico ">Referente Tecnico:</label>
+                <label for="Referente Tecnico" class="text-center" style="width:15rem">Referente Tecnico:</label>
                 @if (dipendenti == null)
                 {
                     <h3>Database Vuoto</h3>
                 }
                 else
                 {
-                    <select @bind="dipendenteid">
+                    <select class="ms-5 me-5 mt-3 mb-3" style="width: 11rem;" @bind="dipendenteid">
                         @foreach (var dipendente in dipendenti)
                         {
                             <option value="@dipendente.DipendenteId">@dipendente.Nome </option>
                         }
                     </select>
                 }
-                <button class="btn-primary" @onclick="Add">  submit </button>
+                <div class="d-flex justify-content-center mt-3 mb-3">
+                <button type="button" class="btn btn-primary" @onclick="Add">Submit</button>
+                </div>
             </div>
         </form>
     </div>
 }
 <style>
     label {
-        font: 1rem 'Fira Sans', sans-serif;
-        
+        font: 1rem 'Fira Sans', sans-serif;    
     }
 
     input,
     label {
         margin: 0.4rem 0;
+        text-align: center;
     }
 
 </style>
