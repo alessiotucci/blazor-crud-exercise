@@ -12,7 +12,7 @@ using MonusProject.Client.Shared.Models;
 
 namespace MonusProject.Server.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/Candidato")]
     [ApiController]
     public class CandidatoController : ControllerBase
     {
@@ -49,14 +49,21 @@ namespace MonusProject.Server.Controllers
         }
 
         // POST: api/Candidato
-          [HttpPost]
+        [HttpPost]
         public async Task<IActionResult> AddCandidato(Candidato nuovoCandidato)
         {
-            // Add the new Candidato to the context and save changes to the database
-             _context.Candidati.Add(nuovoCandidato);
-            await _context.SaveChangesAsync();
+            try
+            {
+                _context.Candidati.Add(nuovoCandidato);
+                await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetCandidato), new {id = nuovoCandidato.CandidatoId }, nuovoCandidato);
+                return CreatedAtAction(nameof(GetCandidato), new { id = nuovoCandidato.CandidatoId }, nuovoCandidato);
+            }
+            catch (Exception ex) { 
+                int a = 0;  
+            }
+            // Add the new Candidato to the context and save changes to the database
+            return null;
         }
 
 

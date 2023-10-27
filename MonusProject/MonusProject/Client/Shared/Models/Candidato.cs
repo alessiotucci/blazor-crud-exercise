@@ -9,10 +9,12 @@ namespace MonusProject.Client.Shared.Models
         public int CandidatoId { get; set; }
         public ICollection<Skill>? Skills { get; set; }
 
-        public Candidato() : base() { }
+        public Candidato() : base() {
+            Skills = new List<Skill>();
+        }
 
         //construttore custom 
-       public Candidato(string _nome, string _cognome) : base()
+        public Candidato(string _nome, string _cognome) : base()
         {
             Nome = _nome;
             Cognome = _cognome;

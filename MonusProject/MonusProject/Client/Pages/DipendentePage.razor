@@ -2,6 +2,7 @@
 @inject HttpClient Http
 
 @using MonusProject.Client.Shared.Models
+@using MonusProject.Client.Shared.ViewModels;
 
 <h3>Dipendente</h3>
 
@@ -40,7 +41,16 @@ else
                 <tr>
                     <td>@cand.Nome</td>
                      <td>@cand.Cognome</td>
-                    <td>@cand.Skills.FirstOrDefault()</td>
+                    @if (cand.Skills != null && cand.Skills.Any())
+
+                    {
+                        <td> ha skills ✅</td> 
+                    }
+                   
+                    else
+                    {
+                        <td> non ha skill ❌</td>
+                    }
                     <td>@cand.SedeId</td>
                      <td>
                         <button class="btn-danger" @onclick="() => Delete(cand.DipendenteId)">delete </button>
@@ -77,9 +87,9 @@ else
                 @foreach (var skill in skills)
                 {
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="@skill.SkillId">
-                        <label class="form-check-label" for="@skill.SkillId">
-                            @skill.SkillName
+                        <input class="form-check-input" type="checkbox" @bind="skill.Selected" id="@skill.Skill.SkillId">
+                        <label class="form-check-label" for="@skill.Skill.SkillId">
+                            @skill.Skill.SkillName
                         </label>
                     </div>
                 }
@@ -187,7 +197,7 @@ else
 
 @code {
     public Dipendente[]? dipendenti;
-    public Skill[]? skills;
+    public SkillViewModel[]? skills;
     public Sede[]? sedi;
 
     public int SedeId;
@@ -226,6 +236,7 @@ else
         UpdateDipendente.Nome = updateNome;
         UpdateDipendente.Cognome = updateCognome;
         UpdateDipendente.SedeId = UpdateSedeId;
+
         var response = await Http.PutAsJsonAsync($"api/Dipendente/{bogus_id}", UpdateDipendente);
         if (response.IsSuccessStatusCode)
             dipendenti = await Http.GetFromJsonAsync<Dipendente[]>("api/Dipendente");
@@ -237,7 +248,7 @@ else
     protected override async Task OnInitializedAsync()
     {
         dipendenti = await Http.GetFromJsonAsync<Dipendente[]>("api/Dipendente");
-        skills = await Http.GetFromJsonAsync<Skill[]>("api/Skill");
+        skills = await Http.GetFromJsonAsync<SkillViewModel[]>("api/Skill");
         sedi = await Http.GetFromJsonAsync<Sede[]>("api/Sede");
     }
 
@@ -246,6 +257,8 @@ else
         NuovoDipendente.Nome = valNome;
         NuovoDipendente.Cognome = valCognome;
         NuovoDipendente.SedeId = SedeId;
+        NuovoDipendente.Skills = skills.Where(s => s.Selected).Select(s => s.Skill).ToList();
+
         //NuovoDipendente.Sede = await Http.GetFromJsonAsync<Sede>($"api/Sede/{SedeId}");
 
         //Skilla = await Http.GetFromJsonAsync<Skill>($"api/Skill/{SkillId}");
@@ -287,14 +300,14 @@ else
 
 
     }
-    public async Task DontDelete()
+    public void DontDelete()
     {
         HideLabel = true;
         Confirmation = 2;
         return;
     }
 
-    public async Task YesPlease()
+    public void YesPlease()
     {
         Confirmation = 1;
         HideLabel = true;

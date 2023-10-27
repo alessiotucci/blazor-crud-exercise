@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 using MonusProject.Client.Shared;
 using MonusProject.Client.Shared.Models;
+using MonusProject.Client.Shared.ViewModels;
 
 namespace MonusProject.Server.Controllers
 {
@@ -24,17 +25,20 @@ namespace MonusProject.Server.Controllers
             _context = context;
         }
 
-        // GET: api/Colloquio
+        // GET: api/Skill
         [HttpGet]
 
         public async Task<ActionResult<IEnumerable<Skill>>> GetSkill()
         {
-            var skill = await _context.Skills.ToListAsync<Skill>();
-            if (skill != null)
-                return Ok(skill);
+            var skills = await _context.Skills
+                .Select(s => new SkillViewModel { Skill = s, Selected = false })
+                .ToListAsync();
+
+            if (skills != null)
+                return Ok(skills);
             else
                 return NotFound();
-          
+
         }
         // GET: api/Skill/5
         [HttpGet("{id}")]
